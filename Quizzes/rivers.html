@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=+, initial-scale=1.0">
+    <title>Rivers Quiz</title>
+    <link rel="stylesheet" href="CSS/question_page.css">
+</head>
+
+<body>
+    <div class="cont1">
+        <div class="cont">
+            <h1>Rivers Quiz</h1>
+        </div>
+    </div>
+    <div class="qut">
+        <style>
+            .navbar {
+        background-color: #01000E;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    }
+     
+    .navbar__container {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 0 50px;
+    }
+     
+    #navbar__logo {
+        background-color: darkslateblue;
+        background-image: linear-gradient(to top,#7760D2 0%, #01000E 100%);
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 2rem;
+    }
+     
+    .fa-gem{
+        margin-right: 0.5rem;
+    }
+     
+    .navbar__menu {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        text-align: center;
+    }
+     
+    .navbar__item {
+        height: 80px;
+    }
+     
+    .navbar__links {
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        padding: 0 1rem;
+        height: 100%;
+    }
+     
+    .navbar__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 1rem;
+        width: 100%;
+    }
+     
+        </style>
+        <nav class="navbar"> 
+            <div class="navbar__container">
+             <a href="/" id="navbar__logo">
+                 <i class="fas fa-gem"></i><i class="fas fa gem"></i>TRIVIO TREK</a>
+             <div class="navbar__toggole" id="mobile-menu">
+                 <span class="bar"></span>
+                 <span class="bar"></span>
+                 <span class="bar"></span>
+             </div>
+             <ul class="navbar__menu">
+                
+                 <li class="navbar__item">
+                    <button onclick="navigateToPage()">Log Out</button>
+
+                    <script>
+                    function navigateToPage() {
+                        window.location.href = "file:///C:/Users/wdewn/Desktop/TrivioTrek/index.html?#";
+                    }
+                    </script>                 </li>
+                 
+             </ul>
+            </div>
+           </nav>
+
+        <form>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.1 From, which of the given states does the Kaveri river flow?
+                </label>
+                <!-- //c -->
+                <p> <label><input type="radio" name='myname1'>Madhya Pradesh, Tamil Nadu </label></p>
+                <p><label><input type="radio" name='myname1'>Mumbai, Goa</label></p>
+                <p> <label><input type="radio" name='myname1'>Karnataka, Tamil Nadu</label></p>
+                <p><label><input type="radio" name='myname1'>Kolkata, Odishalabel</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.2 Which is the longest river in the following given rivers?
+                </label>
+                <!-- //b -->
+                <p> <label><input type="radio" name='myname2'>Sutlej</label></p>
+                <p><label><input type="radio" name='myname2'>Indus</label></p>
+                <p> <label><input type="radio" name='myname2'>Jhelum</label></p>
+                <p><label><input type="radio" name='myname2'>None of these</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.3 In which of the given continents does the river Nile flow?
+                </label>
+                <!-- //a -->
+                <p> <label><input type="radio" name='myname3'>Africa</label></p>
+                <p><label><input type="radio" name='myname3'>Asia</label></p>
+                <p> <label><input type="radio" name='myname3'>North America</label></p>
+                <p><label><input type="radio" name='myname3'>None of theselabel</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.4 The longest river in Europe is:
+                </label>
+                <!-- //b -->
+                <p> <label><input type="radio" name='myName4'>The Rhine</label></p>
+                <p><label><input type="radio" name='myName4'>The Volga</label></p>
+                <p> <label><input type="radio" name='myName4'>The Danube</label></p>
+                <p><label><input type="radio" name='myName4'>The Rhone</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.5 Which one of following the rivers crosses the equator two times?
+                </label>
+                <!-- //a-->
+                <p> <label><input type="radio" name='myname5'>Congo </label></p>
+                <p><label><input type="radio" name='myname5'>Amazon</label></p>
+                <p> <label><input type="radio" name='myname5'>Niger </label></p>
+                <p><label><input type="radio" name='myname5'>The Nile</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.6 Which of the following given river is also known as the Sorrow of Bengal?
+                </label>
+                <!-- //c -->
+                <p> <label><input type="radio" name='myname6'>Yamuna </label></p>
+                <p><label><input type="radio" name='myname6'>Narmada</label></p>
+                <p> <label><input type="radio" name='myname6'>Damodar</label></p>
+                <p><label><input type="radio" name='myname6'>None of these</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.7 If a:b=2:3 and b:c=4:5, find a²: b²: bc =?</label>
+                <!-- //b -->
+                <p> <label><input type="radio" name='myname7'>4:9:45</label></p>
+                <p><label><input type="radio" name='myname7'>16:36:45</label></p>
+                <p> <label><input type="radio" name='myname7'>16:36:20</label></p>
+                <p><label><input type="radio" name='myname7'>4:36:40</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.8 Where is the origin of the Vaigai River?
+                </label>
+                <!-- //d -->
+                <p> <label><input type="radio" name='myname8'>Agasthiyar hills</label></p>
+                <p><label><input type="radio" name='myname8'>Cardamom hills</label></p>
+                <p> <label><input type="radio" name='myname8'>Kolli hills</label></p>
+                <p><label><input type="radio" name='myname8'>Varusanadu Hills</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.9 Which is the longest river in the world?
+                </label>
+                <!-- //a -->
+                <p> <label><input type="radio" name='myname9'>Amazon River</label></p>
+                <p><label><input type="radio" name='myname9'>Ganga</label></p>
+                <p> <label><input type="radio" name='myname9'>Congo</label></p>
+                <p><label><input type="radio" name='myname9'>Kaveri</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.10 Which of the following is a tributary of the river Wardha?
+                </label>
+                <!-- //c -->
+                <p> <label><input type="radio" name='myname10'>Krishna</label></p>
+                <p><label><input type="radio" name='myname10'>Narmada</label></p>
+                <p> <label><input type="radio" name='myname10'>Godavari</label></p>
+                <p><label><input type="radio" name='myname10'>Sabarmati</label></p>
+            </label>
+
+            <button class="sub-btn">Submit</button>
+            <input type="button"value="Grade Me"onClick="getScore(this.form);">
+       
+       <input type="reset" value="Clear"><p>
+       
+       Number of score out of 15 = <input type= text size 20 name= "mark">
+       
+       Score in percentage = <input type=text size=20 name="percentage"><br>
+
+
+        </form>
+        <script>
+       
+            var numQues = 10;
+            
+            var numChoi = 4;
+            
+            var answers = new Array(15);
+            
+           
+            
+            answers[1] = "Karnataka, Tamil Nadu";
+            answers[2] = "None of these";
+            answers[3] = "Africa";
+            answers[4] = "The Volga";
+            answers[5] = "Congo";
+            answers[6] = "Damodar";
+            answers[7] = "4:9:45";
+            answers[8] = "Varusanadu Hills";
+            answers[9] = "Amazon River";
+            answers[10] = "Godavari";
+
+            
+            
+            function getScore(form) {
+            
+            var score = 0;
+            
+            var currElt;
+            
+            var currSelection;
+            
+            for (i=0; i<numQues; i++) {
+            
+            currElt = i*numChoi;
+            
+            answered=false;
+            
+            for (j=0; j<numChoi; j++) {
+            
+            currSelection = form.elements[currElt + j];
+            
+            if (currSelection.checked) {
+            
+            answered=true;
+            
+            if (currSelection.value == answers[i]) {
+            
+            score++;
+            
+            break;
+            
+            }
+            
+            }
+            
+            }
+            
+            if (answered ===false){alert("Do answer all the questions, Please") ;return false;}
+            
+            }
+            
+            var scoreper = Math.round(score/numQues*100);
+            
+            form.percentage.value = scoreper + "%";
+            
+            form.mark.value=score;
+            
+            }
+            
+            </script>
+             
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

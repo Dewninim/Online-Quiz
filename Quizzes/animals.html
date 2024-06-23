@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=+, initial-scale=1.0">
+    <title>Animals Quiz</title>
+    <link rel="stylesheet" href="CSS/question_page.css">
+</head>
+
+<body>
+    <div class="cont1">
+        <div class="cont">
+            <h1>Animals Quiz</h1>
+        </div>
+    </div>
+    <div class="qut">
+        <style>
+            .navbar {
+        background-color: #01000E;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    }
+     
+    .navbar__container {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 0 50px;
+    }
+     
+    #navbar__logo {
+        background-color: darkslateblue;
+        background-image: linear-gradient(to top,#7760D2 0%, #01000E 100%);
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 2rem;
+    }
+     
+    .fa-gem{
+        margin-right: 0.5rem;
+    }
+     
+    .navbar__menu {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        text-align: center;
+    }
+     
+    .navbar__item {
+        height: 80px;
+    }
+     
+    .navbar__links {
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        padding: 0 1rem;
+        height: 100%;
+    }
+     
+    .navbar__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 1rem;
+        width: 100%;
+    }
+     
+        </style>
+      <nav class="navbar"> 
+        <div class="navbar__container">
+         <a href="/" id="navbar__logo">
+             <i class="fas fa-gem"></i><i class="fas fa gem"></i>TRIVIO TREK</a>
+         <div class="navbar__toggole" id="mobile-menu">
+             <span class="bar"></span>
+             <span class="bar"></span>
+             <span class="bar"></span>
+         </div>
+         <ul class="navbar__menu">
+            
+             <li class="navbar__item">
+                <button onclick="navigateToPage()">Log Out</button>
+
+                <script>
+                function navigateToPage() {
+                    window.location.href = "file:///C:/Users/wdewn/Desktop/TrivioTrek/index.html?#";
+                }
+                </script>                 </li>
+             
+         </ul>
+        </div>
+       </nav>
+
+        <form>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.1 Which class has the largest number of animals?
+                </label>
+                <!-- //c -->
+                <p> <label><input type="radio" name='animals1'>Fishes</label></p>
+                <p><label><input type="radio" name='animals1'>Reptiles</label></p>
+                <p> <label><input type="radio" name='animals1'>Insects</label></p>
+                <p><label><input type="radio" name='animals1'>Mammals</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.2 In which country can you find the smallest jellyfish?
+                </label>
+                <!-- //search all answers, they're not correct  -->
+                <p> <label><input type="radio" name='animals2'>South Africa</label></p>
+                <p><label><input type="radio" name='animals2'>China</label></p>
+                <p> <label><input type="radio" name='animals2'>Australia</label></p>
+                <p><label><input type="radio" name='animals2'>Iceland</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.3 What animals are Holstein Friesians?
+                </label>
+                <!-- //b -->
+                <p> <label><input type="radio" name='animals3'>Cats</label></p>
+                <p><label><input type="radio" name='animals3'>Dogs</label></p>
+                <p> <label><input type="radio" name='animals3'>Horses</label></p>
+                <p><label><input type="radio" name='animals3'>Cowslabel</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.4 Which famous horse race is held in Melbourne, Australia?
+                </label>
+                <!-- //b -->
+                <p> <label><input type="radio" name='animals4'>The Grand National</label></p>
+                <p><label><input type="radio" name='animals4'>The Royal Ascot</label></p>
+                <p> <label><input type="radio" name='animals4'>The Kentucky Derby</label></p>
+                <p><label><input type="radio" name='animals4'>Melbourne Cup</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.5 Which famous dolphin can you find in Clearwater Aquarium, Florida?
+                </label>
+                <!-- //b -->
+                <p> <label><input type="radio" name='animals5'>Flipper</label></p>
+                <p><label><input type="radio" name='animals5'>Winter</label></p>
+                <p> <label><input type="radio" name='animals5'>Fungie</label></p>
+                <p><label><input type="radio" name='animals5'>Dusty</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.6 Where can you find the largest coral reef in the world?
+                </label>
+                <!-- //b -->
+                <p> <label><input type="radio" name='animals6'>Australia</label></p>
+                <p><label><input type="radio" name='animals6'>Florida, USA</label></p>
+                <p> <label><input type="radio" name='animals6'>Mexico</label></p>
+                <p><label><input type="radio" name='animals6'>Belize</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.7 Which country has the most sheep in the world?
+                </label>
+                <!-- //b -->
+                <p> <label><input type="radio" name='animals7'>China</label></p>
+                <p><label><input type="radio" name='animals7'>Wales</label></p>
+                <p> <label><input type="radio" name='animals7'>India</label></p>
+                <p><label><input type="radio" name='animals7'>Ireland</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.8 How is a baby cow called?
+                </label>
+                <!-- //b -->
+                <p> <label><input type="radio" name='animals8'>Cub</label></p>
+                <p><label><input type="radio" name='animals8'>Calf</label></p>
+                <p> <label><input type="radio" name='animals8'>Joey</label></p>
+                <p><label><input type="radio" name='animals8'>Kitten</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.9 Which city is known as “The Lion City”?
+                </label>
+                <!-- //b -->
+                <p> <label><input type="radio" name='animals9'>Singapore</label></p>
+                <p><label><input type="radio" name='animals9'>Los Angeles</label></p>
+                <p> <label><input type="radio" name='animals9'>Marrakech</label></p>
+                <p><label><input type="radio" name='animals9'>Delhi</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.10 Which animal was recognized as the symbol of Canada in 1975?
+                </label>
+                <!-- //b -->
+                <p> <label><input type="radio" name='animals10'>Moose</label></p>
+                <p><label><input type="radio" name='animals10'>Beaver</label></p>
+                <p> <label><input type="radio" name='animals10'>Canadian Horse</label></p>
+                <p><label><input type="radio" name='animals10'>Cow</label></p>
+            </label>
+
+            <button class="sub-btn">Submit</button>
+            <input type="button"value="Grade Me"onClick="getScore(this.form);">
+       
+       <input type="reset" value="Clear"><p>
+       
+       Number of score out of 15 = <input type= text size 20 name= "mark">
+       
+       Score in percentage = <input type=text size=20 name="percentage"><br>
+
+
+        </form>
+            <script>
+       
+                var numQues = 10;
+                
+                var numChoi = 4;
+                
+                var answers = new Array(15);
+                
+            answers[1] = "Mammals";
+            answers[2] = "China";
+            answers[3] = "Cows";
+            answers[4] = "Melbourne Cup";
+            answers[5] = "Winter";
+            answers[6] = "Australia";
+            answers[7] = "China";
+            answers[8] = "Calf";
+            answers[9] = "Singapore";
+            answers[10] = "Beaver";
+
+                
+                function getScore(form) {
+                
+                var score = 0;
+                
+                var currElt;
+                
+                var currSelection;
+                
+                for (i=0; i<numQues; i++) {
+                
+                currElt = i*numChoi;
+                
+                answered=false;
+                
+                for (j=0; j<numChoi; j++) {
+                
+                currSelection = form.elements[currElt + j];
+                
+                if (currSelection.checked) {
+                
+                answered=true;
+                
+                if (currSelection.value == answers[i]) {
+                
+                score++;
+                
+                break;
+                
+                }
+                
+                }
+                
+                }
+                
+                if (answered ===false){alert("Do answer all the questions, Please") ;return false;}
+                
+                }
+                
+                var scoreper = Math.round(score/numQues*100);
+                
+                form.percentage.value = scoreper + "%";
+                
+                form.mark.value=score;
+                
+                }
+                
+                </script>
+                 
+
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

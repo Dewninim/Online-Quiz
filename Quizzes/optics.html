@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=+, initial-scale=1.0">
+    <title>Optics Quiz</title>
+    <link rel="stylesheet" href="CSS/question_page.css">
+</head>
+
+<body>
+    <div class="cont1">
+        <div class="cont">
+            <h1>Optics Quiz</h1>
+        </div>
+    </div>
+    <div class="qut">
+        <style>
+            .navbar {
+        background-color: #01000E;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    }
+     
+    .navbar__container {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 0 50px;
+    }
+     
+    #navbar__logo {
+        background-color: darkslateblue;
+        background-image: linear-gradient(to top,#7760D2 0%, #01000E 100%);
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 2rem;
+    }
+     
+    .fa-gem{
+        margin-right: 0.5rem;
+    }
+     
+    .navbar__menu {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        text-align: center;
+    }
+     
+    .navbar__item {
+        height: 80px;
+    }
+     
+    .navbar__links {
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        padding: 0 1rem;
+        height: 100%;
+    }
+     
+    .navbar__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 1rem;
+        width: 100%;
+    }
+     
+        </style>
+        <nav class="navbar"> 
+            <div class="navbar__container">
+             <a href="/" id="navbar__logo">
+                 <i class="fas fa-gem"></i><i class="fas fa gem"></i>TRIVIO TREK</a>
+             <div class="navbar__toggole" id="mobile-menu">
+                 <span class="bar"></span>
+                 <span class="bar"></span>
+                 <span class="bar"></span>
+             </div>
+             <ul class="navbar__menu">
+                
+                 <li class="navbar__item">
+                    <button onclick="navigateToPage()">Log Out</button>
+
+                    <script>
+                    function navigateToPage() {
+                        window.location.href = "file:///C:/Users/wdewn/Desktop/TrivioTrek/index.html?#";
+                    }
+                    </script>                 </li>
+                 
+             </ul>
+            </div>
+           </nav>
+
+        <form>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.1 For a total internal reflection, which of the following is correct?
+                </label>
+                <!-- //b -->
+                <p> <label><input type="radio" name='myName4'>Light travels from rarer to denser medium</label></p>
+                <p><label><input type="radio" name='myName4'>Light travels from denser to rarer medium</label></p>
+                <p> <label><input type="radio" name='myName4'>Light travels in air only</label></p>
+                <p><label><input type="radio" name='myName4'>Light travels in water only</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.2 Mirage is a phenomenon due to
+                </label>
+                <!-- //c -->
+                <p> <label><input type="radio" name='myName4'>Refraction of light</label></p>
+                <p><label><input type="radio" name='myName4'>Reflection of light</label></p>
+                <p> <label><input type="radio" name='myName4'>Total internal reflection of light</label></p>
+                <p><label><input type="radio" name='myName4'>Diffraction of light</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.3 Which of the following forms a virtual and erect image for all positions of
+                    the object?
+                </label>
+                <!-- //d-->
+                <p> <label><input type="radio" name='myName4'>Concave lens</label></p>
+                <p><label><input type="radio" name='myName4'>Concave mirror</label></p>
+                <p> <label><input type="radio" name='myName4'>Convex mirror</label></p>
+                <p><label><input type="radio" name='myName4'>Both (a) and (c)</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.4 An under-water swimmer cannot see very clearly even in absolutely clear
+                    water because of
+                </label>
+                <!-- //d -->
+                <p> <label><input type="radio" name='myName4'>absorption of light in water</label></p>
+                <p><label><input type="radio" name='myName4'>scattering of light in water</label></p>
+                <p> <label><input type="radio" name='myName4'>reduction of speed of light in water</label></p>
+                <p><label><input type="radio" name='myName4'>change in the focal length of eye lens</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.5 The field of view is maximum for
+                </label>
+                <!-- //c-->
+                <p> <label><input type="radio" name='myName4'>plane mirror</label></p>
+                <p><label><input type="radio" name='myName4'>concave mirror</label></p>
+                <p> <label><input type="radio" name='myName4'>convex mirror</label></p>
+                <p><label><input type="radio" name='myName4'>cylindrical mirror</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.6 A person is six feet tall. How tall must a plane mirror be if he is able to
+                    see his entire length?
+                </label>
+                <!-- //a -->
+                <p> <label><input type="radio" name='myName4'>3 ft</label></p>
+                <p><label><input type="radio" name='myName4'>4.5 ft</label></p>
+                <p> <label><input type="radio" name='myName4'>7.5 ft</label></p>
+                <p><label><input type="radio" name='myName4'>6 ft</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.7 The image formed by a concave mirror is
+                </label>
+                <!-- //c -->
+                <p> <label><input type="radio" name='myName4'>always real</label></p>
+                <p><label><input type="radio" name='myName4'>always virtual</label></p>
+                <p> <label><input type="radio" name='myName4'>certainly real if the object is virtual</label></p>
+                <p><label><input type="radio" name='myName4'>certainly virtual if the object is real</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.8 When light is refracted into a medium,
+                </label>
+                <!-- //b -->
+                <p> <label><input type="radio" name='myName4'>its wavelength and frequency both increase</label></p>
+                <p><label><input type="radio" name='myName4'>its wavelength increases but frequency remains
+                        unchanged</label></p>
+                <p> <label><input type="radio" name='myName4'>its wavelength decreases but frequency remains
+                        unchanged</label></p>
+                <p><label><input type="radio" name='myName4'>its wavelength and frequency both decrease </label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.9 Which of the following phenomena is used in optical fibres ?
+                </label>
+                <!-- //a -->
+                <p> <label><input type="radio" name='myName4'>Total internal reflection</label></p>
+                <p><label><input type="radio" name='myName4'>Scattering</label></p>
+                <p> <label><input type="radio" name='myName4'>Diffraction</label></p>
+                <p><label><input type="radio" name='myName4'>Refraction</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.10 The objective of a telescope must be of large diameter in order to
+                </label>
+                <!-- //c -->
+                <p> <label><input type="radio" name='myName4'>remove chromatic aberration</label></p>
+                <p><label><input type="radio" name='myName4'>remove spherical aberration and high magnification</label>
+                </p>
+                <p> <label><input type="radio" name='myName4'>gather more light and for high resolution</label></p>
+                <p><label><input type="radio" name='myName4'>increase its range of observation</label></p>
+            </label>
+
+            <button class="sub-btn">Submit</button>
+            <input type="button"value="Grade Me"onClick="getScore(this.form);">
+       
+       <input type="reset" value="Clear"><p>
+       
+       Number of score out of 15 = <input type= text size 20 name= "mark">
+       
+       Score in percentage = <input type=text size=20 name="percentage"><br>
+
+
+        </form>
+        <script>
+       
+            var numQues = 10;
+            
+            var numChoi = 4;
+            
+            var answers = new Array(15);
+            
+           
+            
+            answers[1] = "Light travels from denser to rarer medium";
+            answers[2] = "Total internal reflection of light";
+            answers[3] = "Convex mirror";
+            answers[4] = "scattering of light in water";
+            answers[5] = "plane mirror";
+            answers[6] = "6 ft";
+            answers[7] = "certainly virtual if the object is real";
+            answers[8] = "its wavelength decreases but frequency remains unchanged";
+            answers[9] = "Total internal reflection";
+            answers[10] = "gather more light and for high resolution";
+
+            
+            
+            function getScore(form) {
+            
+            var score = 0;
+            
+            var currElt;
+            
+            var currSelection;
+            
+            for (i=0; i<numQues; i++) {
+            
+            currElt = i*numChoi;
+            
+            answered=false;
+            
+            for (j=0; j<numChoi; j++) {
+            
+            currSelection = form.elements[currElt + j];
+            
+            if (currSelection.checked) {
+            
+            answered=true;
+            
+            if (currSelection.value == answers[i]) {
+            
+            score++;
+            
+            break;
+            
+            }
+            
+            }
+            
+            }
+            
+            if (answered ===false){alert("Do answer all the questions, Please") ;return false;}
+            
+            }
+            
+            var scoreper = Math.round(score/numQues*100);
+            
+            form.percentage.value = scoreper + "%";
+            
+            form.mark.value=score;
+            
+            }
+            
+            </script>
+             
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=+, initial-scale=1.0">
+    <title>Statistics Quiz</title>
+    <link rel="stylesheet" href="CSS/question_page.css">
+</head>
+
+<body>
+    <div class="cont1">
+        <div class="cont">
+            <h1>Statistics Quiz</h1>
+        </div>
+    </div>
+    <div class="qut">
+        <style>
+            .navbar {
+        background-color: #01000E;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    }
+     
+    .navbar__container {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 0 50px;
+    }
+     
+    #navbar__logo {
+        background-color: darkslateblue;
+        background-image: linear-gradient(to top,#7760D2 0%, #01000E 100%);
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 2rem;
+    }
+     
+    .fa-gem{
+        margin-right: 0.5rem;
+    }
+     
+    .navbar__menu {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        text-align: center;
+    }
+     
+    .navbar__item {
+        height: 80px;
+    }
+     
+    .navbar__links {
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        padding: 0 1rem;
+        height: 100%;
+    }
+     
+    .navbar__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 1rem;
+        width: 100%;
+    }
+     
+        </style>
+      <nav class="navbar"> 
+        <div class="navbar__container">
+         <a href="/" id="navbar__logo">
+             <i class="fas fa-gem"></i><i class="fas fa gem"></i>TRIVIO TREK</a>
+         <div class="navbar__toggole" id="mobile-menu">
+             <span class="bar"></span>
+             <span class="bar"></span>
+             <span class="bar"></span>
+         </div>
+         <ul class="navbar__menu">
+            
+             <li class="navbar__item">
+                <button onclick="navigateToPage()">Log Out</button>
+
+                <script>
+                function navigateToPage() {
+                    window.location.href = "file:///C:/Users/wdewn/Desktop/TrivioTrek/index.html?#";
+                }
+                </script>                 </li>
+             
+         </ul>
+        </div>
+       </nav>
+        <form>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.1 The runs scored by a batsman in 5 ODIs are 31,97,112, 63, and 12. The
+                    standard deviation is
+                </label>
+                <!-- //c -->
+                <p> <label><input type="radio" name='statistics1'>24.79</label></p>
+                <p><label><input type="radio" name='statistics1'>23.79</label></p>
+                <p> <label><input type="radio" name='statistics1'>25.79</label></p>
+                <p><label><input type="radio" name='statistics1'>26.79</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.2 Find the mode of the call received on 7 consecutive day 11,13,13,17,19,23,25
+                </label>
+                <!-- //b -->
+                <p> <label><input type="radio" name='statistics2'>11</label></p>
+                <p><label><input type="radio" name='statistics2'>13</label></p>
+                <p> <label><input type="radio" name='statistics2'>17</label></p>
+                <p><label><input type="radio" name='statistics2'>23</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.3 Find the median of the call received on 7 consecutive days 11,13, 17, 13,
+                    23,25,19 </label>
+                <!-- //d -->
+                <p> <label><input type="radio" name='statistics3'>13</label></p>
+                <p><label><input type="radio" name='statistics3'>23</label></p>
+                <p> <label><input type="radio" name='statistics3'>25</label></p>
+                <p><label><input type="radio" name='statistics3'>17</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.4 Find the mode and median of the 9 consecutive number 12,7,8,14,21,23,27,7,11
+                </label>
+                <!-- //c -->
+                <p> <label><input type="radio" name='statistics4'>12,9</label></p>
+                <p><label><input type="radio" name='statistics4'>7,9</label></p>
+                <p> <label><input type="radio" name='statistics4'>7,12</label></p>
+                <p><label><input type="radio" name='statistics4'>11,9</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.5 When the Mean of a number is 18, what is the Mean of the sampling
+                    distribution? </label>
+                <!-- //b -->
+                <p> <label><input type="radio" name='statistics5'>21</label></p>
+                <p><label><input type="radio" name='statistics5'>18</label></p>
+                <p> <label><input type="radio" name='statistics5'>23</label></p>
+                <p><label><input type="radio" name='statistics5'>17</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.6 If the probability of hitting an object is 0.8, find the variance?
+                </label>
+                <!-- //b -->
+                <p> <label><input type="radio" name='statistics6'>0.18</label></p>
+                <p><label><input type="radio" name='statistics6'>0.16</label></p>
+                <p> <label><input type="radio" name='statistics6'>0.14</label></p>
+                <p><label><input type="radio" name='statistics6'>0.12</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.7 Find the mean, mode and median of the given sets of data:
+                    5,8,12,17,12,14,6,8, 12, and 10
+                </label>
+                <!-- //d-->
+                <p> <label><input type="radio" name='statistics7'>11,12,10</label></p>
+                <p><label><input type="radio" name='statistics7'>10,12,13</label></p>
+                <p> <label><input type="radio" name='statistics7'>11,12,13</label></p>
+                <p><label><input type="radio" name='statistics7'>10,12,11</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.8 Variance of a constant 'x' is
+                </label>
+                <!-- //a -->
+                <p> <label><input type="radio" name='statistics8'>0</label></p>
+                <p><label><input type="radio" name='statistics8'>x/2</label></p>
+                <p> <label><input type="radio" name='statistics8'>x</label></p>
+                <p><label><input type="radio" name='statistics8'>1</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.9 E(X) = λ is used for which distribution?
+                </label>
+                <!-- //b -->
+                <p> <label><input type="radio" name='statistics9'>Binomial distribution</label></p>
+                <p><label><input type="radio" name='statistics9'>Poisson's distribution</label></p>
+                <p> <label><input type="radio" name='statistics9'>Bernoulli's distribution</label></p>
+                <p><label><input type="radio" name='statistics9'>Laplace distributio</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.10 If P (1) = λ P (5) in Poisson's distribution, find the value of mean
+                </label>
+                <!-- //d -->
+                <p> <label><input type="radio" name='statistics10'>33.81</label></p>
+                <p><label><input type="radio" name='statistics10'>53.81</label></p>
+                <p> <label><input type="radio" name='statistics10'>63.81</label></p>
+                <p><label><input type="radio" name='statistics10'>43.81</label></p>
+            </label>
+
+            <button class="sub-btn">Submit</button>
+            <input type="button"value="Grade Me"onClick="getScore(this.form);">
+       
+       <input type="reset" value="Clear"><p>
+       
+       Number of score out of 15 = <input type= text size 20 name= "mark">
+       
+       Score in percentage = <input type=text size=20 name="percentage"><br>
+
+
+        </form>
+        <script>
+       
+            var numQues = 10;
+            
+            var numChoi = 4;
+            
+            var answers = new Array(15);
+            
+           
+            
+            answers[1] = "24.79";
+            answers[2] = "13";
+            answers[3] = "17";
+            answers[4] = "7, 12";
+            answers[5] = "18";
+            answers[6] = "0.16";
+            answers[7] = "10,12,12";
+            answers[8] = "0";
+            answers[9] = "Poisson's distribution";
+            answers[10] = "43.81";
+
+            
+            
+            
+            function getScore(form) {
+            
+            var score = 0;
+            
+            var currElt;
+            
+            var currSelection;
+            
+            for (i=0; i<numQues; i++) {
+            
+            currElt = i*numChoi;
+            
+            answered=false;
+            
+            for (j=0; j<numChoi; j++) {
+            
+            currSelection = form.elements[currElt + j];
+            
+            if (currSelection.checked) {
+            
+            answered=true;
+            
+            if (currSelection.value == answers[i]) {
+            
+            score++;
+            
+            break;
+            
+            }
+            
+            }
+            
+            }
+            
+            if (answered ===false){alert("Do answer all the questions, Please") ;return false;}
+            
+            }
+            
+            var scoreper = Math.round(score/numQues*100);
+            
+            form.percentage.value = scoreper + "%";
+            
+            form.mark.value=score;
+            
+            }
+            
+            </script>
+             
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

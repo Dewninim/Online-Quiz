@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=+, initial-scale=1.0">
+    <title>Probability Quiz</title>
+    <link rel="stylesheet" href="CSS/question_page.css">
+</head>
+
+<body>
+    <div class="cont1">
+        <div class="cont">
+            <h1>Probability Quiz</h1>
+        </div>
+    </div>
+    <div class="qut">
+        <style>
+            .navbar {
+        background-color: #01000E;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    }
+     
+    .navbar__container {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 0 50px;
+    }
+     
+    #navbar__logo {
+        background-color: darkslateblue;
+        background-image: linear-gradient(to top,#7760D2 0%, #01000E 100%);
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 2rem;
+    }
+     
+    .fa-gem{
+        margin-right: 0.5rem;
+    }
+     
+    .navbar__menu {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        text-align: center;
+    }
+     
+    .navbar__item {
+        height: 80px;
+    }
+     
+    .navbar__links {
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        padding: 0 1rem;
+        height: 100%;
+    }
+     
+    .navbar__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 1rem;
+        width: 100%;
+    }
+     
+        </style>
+        <nav class="navbar"> 
+            <div class="navbar__container">
+             <a href="/" id="navbar__logo">
+                 <i class="fas fa-gem"></i><i class="fas fa gem"></i>TRIVIO TREK</a>
+             <div class="navbar__toggole" id="mobile-menu">
+                 <span class="bar"></span>
+                 <span class="bar"></span>
+                 <span class="bar"></span>
+             </div>
+             <ul class="navbar__menu">
+                
+                 <li class="navbar__item">
+                    <button onclick="navigateToPage()">Log Out</button>
+
+                    <script>
+                    function navigateToPage() {
+                        window.location.href = "file:///C:/Users/wdewn/Desktop/TrivioTrek/index.html?#";
+                    }
+                    </script>                 </li>
+                 
+             </ul>
+            </div>
+           </nav>
+        <form>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.1 An event in the probability that will never be happened is called as -
+                </label>
+                <!-- //d-->
+                <p> <label><input type="radio" name='probability1'>Unsure event</label></p>
+                <p><label><input type="radio" name='probability1'>Sure event</label></p>
+                <p> <label><input type="radio" name='probability1'>Possible event</label></p>
+                <p><label><input type="radio" name='probability1'>Impossible event</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.2 What will be the value of P(not E) if P(E) = 0.07?
+
+                </label>
+                <!-- //c -->
+                <p> <label><input type="radio" name='probability2'>90</label></p>
+                <p><label><input type="radio" name='probability2'>007</label></p>
+                <p> <label><input type="radio" name='probability2'>0.93</label></p>
+                <p><label><input type="radio" name='probability2'>72</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.3 What will be the probability of getting odd numbers if a dice is thrown?
+                </label>
+                <!-- //a -->
+                <p> <label><input type="radio" name='probability3'>1/2</label></p>
+                <p><label><input type="radio" name='probability3'>2</label></p>
+                <p> <label><input type="radio" name='probability3'>4/2</label></p>
+                <p><label><input type="radio" name='probability3'>5/2</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.4 What is the probability of getting a sum as 3 if a dice is thrown?
+                </label>
+                <!-- //b -->
+                <p> <label><input type="radio" name='probability4'>2/18</label></p>
+                <p><label><input type="radio" name='probability4'>1/18</label></p>
+                <p> <label><input type="radio" name='probability4'>4</label></p>
+                <p><label><input type="radio" name='probability4'>1/36</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.5 What is the probability of getting an even number when a dice is thrown?
+                </label>
+                <!-- //b -->
+                <p> <label><input type="radio" name='probability5'>1/6</label></p>
+                <p><label><input type="radio" name='probability5'>1/2</label></p>
+                <p> <label><input type="radio" name='probability5'>1/3</label></p>
+                <p><label><input type="radio" name='probability5'>1/4</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.6 The probability of getting two tails when two coins are tossed is -
+
+                </label>
+                <!-- //d -->
+                <p> <label><input type="radio" name='probability6'>1/6</label></p>
+                <p><label><input type="radio" name='probability6'>1/2</label></p>
+                <p> <label><input type="radio" name='probability6'>1/3</label></p>
+                <p><label><input type="radio" name='probability6'>1/4</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.7 What is the probability of getting the sum as a prime number if two dice are
+                    thrown?
+                </label>
+                <!-- //b -->
+                <p> <label><input type="radio" name='probability7'>5/24</label></p>
+                <p><label><input type="radio" name='probability7'>5/12</label></p>
+                <p> <label><input type="radio" name='probability7'>5/30</label></p>
+                <p><label><input type="radio" name='probability7'>1/4</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.8 What is the probability of getting atleast one head if three unbiased coins
+                    are tossed?
+
+                </label>
+                <!-- //a -->
+                <p> <label><input type="radio" name='probability8'>7/8</label></p>
+                <p><label><input type="radio" name='probability8'>1/2</label></p>
+                <p> <label><input type="radio" name='probability8'>5/8</label></p>
+                <p><label><input type="radio" name='probability8'>8/9</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.9 What is the probability of getting 1 and 5 if a dice is thrown once?
+
+                </label>
+                <!-- //b -->
+                <p> <label><input type="radio" name='probability9'>1/6</label></p>
+                <p><label><input type="radio" name='probability9'>1/3</label></p>
+                <p> <label><input type="radio" name='probability9'>2/3</label></p>
+                <p><label><input type="radio" name='probability9'>8/9</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.10 What will be the probability of losing a game if the winning probability is
+                    0.3?
+                </label>
+                <!-- //c -->
+                <p> <label><input type="radio" name='probability10'>0.5</label></p>
+                <p><label><input type="radio" name='probability10'>0.6</label></p>
+                <p> <label><input type="radio" name='probability10'>0.7</label></p>
+                <p><label><input type="radio" name='probability10'>0.8</label></p>
+            </label>
+
+            <button class="sub-btn">Submit</button>
+            <input type="button"value="Grade Me"onClick="getScore(this.form);">
+       
+       <input type="reset" value="Clear"><p>
+       
+       Number of score out of 15 = <input type= text size 20 name= "mark">
+       
+       Score in percentage = <input type=text size=20 name="percentage"><br>
+
+
+        </form>
+        <script>
+       
+            var numQues = 10;
+            
+            var numChoi = 4;
+            
+            var answers = new Array(15);
+            
+           
+            
+            answers[1] = "Impossible event";
+            answers[2] = "0.93";
+            answers[3] = "1/2";
+            answers[4] = "1/18";
+            answers[5] = "1/2";
+            answers[6] = "1/4";
+            answers[7] = "5/12";
+            answers[8] = "7/8";
+            answers[9] = "1/3";
+            answers[10] = "0.7";
+
+            
+            function getScore(form) {
+            
+            var score = 0;
+            
+            var currElt;
+            
+            var currSelection;
+            
+            for (i=0; i<numQues; i++) {
+            
+            currElt = i*numChoi;
+            
+            answered=false;
+            
+            for (j=0; j<numChoi; j++) {
+            
+            currSelection = form.elements[currElt + j];
+            
+            if (currSelection.checked) {
+            
+            answered=true;
+            
+            if (currSelection.value == answers[i]) {
+            
+            score++;
+            
+            break;
+            
+            }
+            
+            }
+            
+            }
+            
+            if (answered ===false){alert("Do answer all the questions, Please") ;return false;}
+            
+            }
+            
+            var scoreper = Math.round(score/numQues*100);
+            
+            form.percentage.value = scoreper + "%";
+            
+            form.mark.value=score;
+            
+            }
+            
+            </script>
+             
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algebra Quiz</title>
+    <link rel="stylesheet" href="CSS/question_page.css">
+</head>
+
+<body>
+
+    <div class="cont1">
+        <div class="cont">
+            <h1>Algebra Quiz</h1>
+        </div>
+    </div>
+    <div class="qut">
+        <style>
+            .navbar {
+        background-color: #01000E;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    }
+     
+    .navbar__container {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 0 50px;
+    }
+     
+    #navbar__logo {
+        background-color: darkslateblue;
+        background-image: linear-gradient(to top,#7760D2 0%, #01000E 100%);
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 2rem;
+    }
+     
+    .fa-gem{
+        margin-right: 0.5rem;
+    }
+     
+    .navbar__menu {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        text-align: center;
+    }
+     
+    .navbar__item {
+        height: 80px;
+    }
+     
+    .navbar__links {
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        padding: 0 1rem;
+        height: 100%;
+    }
+     
+    .navbar__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 1rem;
+        width: 100%;
+    }
+
+     
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        padding: 10px 20px;
+        height: 100%;
+        width: 100%;
+        border: none;
+        outline: none;
+        border-radius: 4px;
+        background: darkslateblue;
+        color: white;
+    }
+     
+        </style>
+        <nav class="navbar"> 
+            <div class="navbar__container">
+             <a href="/" id="navbar__logo">
+                 <i class="fas fa-gem"></i><i class="fas fa gem"></i>TRIVIO TREK</a>
+             <div class="navbar__toggole" id="mobile-menu">
+                 <span class="bar"></span>
+                 <span class="bar"></span>
+                 <span class="bar"></span>
+             </div>
+             <ul class="navbar__menu">
+                
+                 <li class="navbar__item">
+                    <button onclick="navigateToPage()">Log Out</button>
+
+                    <script>
+                    function navigateToPage() {
+                        window.location.href = "file:///C:/Users/wdewn/Desktop/TrivioTrek/index.html?#";
+                    }
+                    </script>                 </li>
+                 
+             </ul>
+            </div>
+           </nav>
+        <form>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.1 Which of the following is the numerical coefficient of x^2 y^2?
+                </label>
+                <!-- //b -->
+                <p> <label><input type="radio" name='algebra1'>0</label></p>
+                <p><label><input type="radio" name='algebra1'>1</label></p>
+                <p> <label><input type="radio" name='algebra1'>x^2</label></p>
+                <p><label><input type="radio" name='algebra1'>y^2</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.2 The rule, which gives the number of matchsticks required to make the
+                    matchstick pattern L, is
+                </label>
+                <!-- //a -->
+                <p> <label><input type="radio" name='algebra2'>2n</label></p>
+                <p><label><input type="radio" name='algebra2'>3n</label></p>
+                <p> <label><input type="radio" name='algebra2'>4n</label></p>
+                <p><label><input type="radio" name='algebra2'>5n</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.3 If (x - 6) is the HCF of x^2 - 2x - 24 and x^2 - kx - 6 then the value of k
+                    is
+                </label>
+                <!-- //b -->
+                <p> <label><input type="radio" name='algebra3'>3</label></p>
+                <p><label><input type="radio" name='algebra3'>5</label></p>
+                <p> <label><input type="radio" name='algebra3'>6</label></p>
+                <p><label><input type="radio" name='algebra3'>8</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.4 The volume of a cuboid with length, breadth and height as 5x, 3x2 and 7x4
+                    respectively is:
+                </label>
+                <!-- //a -->
+                <p> <label><input type="radio" name='algebra4'>105x^7</label></p>
+                <p><label><input type="radio" name='algebra4'>105x^2</label></p>
+                <p> <label><input type="radio" name='algebra4'>105x^4</label></p>
+                <p><label><input type="radio" name='algebra4'>105x</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.5 The product of 4x and 0 is:
+                </label>
+                <!-- //c -->
+                <p> <label><input type="radio" name='algebra5'>4x</label></p>
+                <p><label><input type="radio" name='algebra5'>4</label></p>
+                <p> <label><input type="radio" name='algebra5'>0</label></p>
+                <p><label><input type="radio" name='algebra5'>None of the above</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.6 f we subtract 4a – 7ab + 3b + 12 from 12a – 9ab + 5b – 3, then the answer
+                    is:
+                </label>
+                <!-- //c-->
+                <p> <label><input type="radio" name='algebra6'>8a+2ab+2b+15</label></p>
+                <p><label><input type="radio" name='algebra6'>8a+2ab+2b-15</label></p>
+                <p> <label><input type="radio" name='algebra6'>8a-2ab+2b-15</label></p>
+                <p><label><input type="radio" name='algebra6'>8a-2ab-2b-15 </label>
+            </label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.7 A polynomial contains _______ number of terms:
+                </label>
+                <!-- //d -->
+                <p> <label><input type="radio" name='algebra7'>One</label></p>
+                <p><label><input type="radio" name='algebra7'>Two</label></p>
+                <p> <label><input type="radio" name='algebra7'>Three</label></p>
+                <p><label><input type="radio" name='algebra7'>Any</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.8 The algebraic expression 3x+2y+6 is a:
+                </label>
+                <!-- //c -->
+                <p> <label><input type="radio" name='algebra8'>Monomial</label></p>
+                <p><label><input type="radio" name='algebra8'>Binomial</label></p>
+                <p> <label><input type="radio" name='algebra8'>Trinomial</label></p>
+                <p><label><input type="radio" name='algebra8'>None of the above</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.9 Which of the following is a like term as 8xy?
+                </label>
+                <!-- //d-->
+                <p> <label><input type="radio" name='algebra9'>8</label></p>
+                <p><label><input type="radio" name='algebra9'>8x</label></p>
+                <p> <label><input type="radio" name='algebra9'>8y</label></p>
+                <p><label><input type="radio" name='algebra9'>xy</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.10 Multiplication of monomials x², (–x)³, (–x)^4 is equal to:
+                </label>
+                <!-- //a-->
+                <p> <label><input type="radio" name='algebra10'>x^9</label></p>
+                <p><label><input type="radio" name='algebra10'>x^5</label></p>
+                <p> <label><input type="radio" name='algebra10'>x^7</label></p>
+                <p><label><input type="radio" name='algebra10'>x^6</label></p>
+            </label>
+
+            <button class="sub-btn">Submit</button>
+            <input type="button"value="Grade Me"onClick="getScore(this.form);">
+       
+       <input type="reset" value="Clear"><p>
+       
+       Number of score out of 15 = <input type= text size 20 name= "mark">
+       
+       Score in percentage = <input type=text size=20 name="percentage"><br>
+
+
+        </form>
+
+        <script>
+       
+            var numQues = 10;
+            
+            var numChoi = 4;
+            
+            var answers = new Array(15);
+            
+           
+            
+            answers[1] = "1";
+            answers[2] = "4n";
+            answers[3] = "5";
+            answers[4] = "105x^7";
+            answers[5] = "0";
+            answers[6] = "8a+2ab+2b-15";
+            answers[7] = "Any";
+            answers[8] = "Trinomial";
+            answers[9] = "None of the above";
+            answers[10] = "x^5";
+
+            
+            
+            
+            function getScore(form) {
+            
+            var score = 0;
+            
+            var currElt;
+            
+            var currSelection;
+            
+            for (i=0; i<numQues; i++) {
+            
+            currElt = i*numChoi;
+            
+            answered=false;
+            
+            for (j=0; j<numChoi; j++) {
+            
+            currSelection = form.elements[currElt + j];
+            
+            if (currSelection.checked) {
+            
+            answered=true;
+            
+            if (currSelection.value == answers[i]) {
+            
+            score++;
+            
+            break;
+            
+            }
+            
+            }
+            
+            }
+            
+            if (answered ===false){alert("Do answer all the questions, Please") ;return false;}
+            
+            }
+            
+            var scoreper = Math.round(score/numQues*100);
+            
+            form.percentage.value = scoreper + "%";
+            
+            form.mark.value=score;
+            
+            }
+            
+            </script>
+             
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

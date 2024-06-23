@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=+, initial-scale=1.0">
+    <title>Atoms Quiz</title>
+    <link rel="stylesheet" href="CSS/question_page.css">
+</head>
+
+<body>
+    <div class="cont1">
+        <div class="cont">
+            <h1>Atoms Quiz</h1>
+        </div>
+    </div>
+    <div class="qut">
+        <style>
+            .navbar {
+        background-color: #01000E;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    }
+     
+    .navbar__container {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 0 50px;
+    }
+     
+    #navbar__logo {
+        background-color: darkslateblue;
+        background-image: linear-gradient(to top,#7760D2 0%, #01000E 100%);
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 2rem;
+    }
+     
+    .fa-gem{
+        margin-right: 0.5rem;
+    }
+     
+    .navbar__menu {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        text-align: center;
+    }
+     
+    .navbar__item {
+        height: 80px;
+    }
+     
+    .navbar__links {
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        padding: 0 1rem;
+        height: 100%;
+    }
+     
+    .navbar__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 1rem;
+        width: 100%;
+    }
+     
+        </style>
+      <nav class="navbar"> 
+        <div class="navbar__container">
+         <a href="/" id="navbar__logo">
+             <i class="fas fa-gem"></i><i class="fas fa gem"></i>TRIVIO TREK</a>
+         <div class="navbar__toggole" id="mobile-menu">
+             <span class="bar"></span>
+             <span class="bar"></span>
+             <span class="bar"></span>
+         </div>
+         <ul class="navbar__menu">
+            
+             <li class="navbar__item">
+                <button onclick="navigateToPage()">Log Out</button>
+
+                <script>
+                function navigateToPage() {
+                    window.location.href = "file:///C:/Users/wdewn/Desktop/TrivioTrek/index.html?#";
+                }
+                </script>                 </li>
+             
+         </ul>
+        </div>
+       </nav>
+
+        <form>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.1 What did Rutherford’s alpha particle experiment prove?
+                </label>
+                <!-- //d-->
+                <p> <label><input type="radio" name='atoms1'>Electrons</label></p>
+                <p><label><input type="radio" name='atoms1'>Protons</label></p>
+                <p> <label><input type="radio" name='atoms1'>Neutrons</label></p>
+                <p><label><input type="radio" name='atoms1'>Nucleus</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.2 Why was Rutherford’s atomic model unstable?
+                </label>
+                <!-- //a -->
+                <p> <label><input type="radio" name='atoms2'>Electrons do not remain in orbit</label></p>
+                <p><label><input type="radio" name='atoms2'>Nuclei will break down</label></p>
+                <p> <label><input type="radio" name='atoms2'>The nucleus repels electrons</label></p>
+                <p><label><input type="radio" name='atoms2'>Orbiting electrons radiate energy</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.3 Balmer series lies in which spectrum?
+                </label>
+                <!-- //b -->
+                <p> <label><input type="radio" name='atoms3'>Ultraviolet</label></p>
+                <p><label><input type="radio" name='atoms3'>Visible</label></p>
+                <p> <label><input type="radio" name='atoms3'>Infrared</label></p>
+                <p><label><input type="radio" name='atoms3'>Partially Visible</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.4 According to the classical theory, the circular path of the electrons is
+                </label>
+                <!-- //c -->
+                <p> <label><input type="radio" name='atoms4'>Circular</label></p>
+                <p><label><input type="radio" name='atoms4'>Parabolic</label></p>
+                <p> <label><input type="radio" name='atoms4'>Spiral</label></p>
+                <p><label><input type="radio" name='atoms4'>Straight line</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.5 Electrons in the atom are held to the nucleus by
+                </label>
+                <!-- //b -->
+                <p> <label><input type="radio" name='atoms5'>Nuclear Force</label></p>
+                <p><label><input type="radio" name='atoms5'>Coulomb’s Force</label></p>
+                <p> <label><input type="radio" name='atoms5'>Gravitational Force</label></p>
+                <p><label><input type="radio" name='atoms5'>Van Der Waal’s Force</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.6 The electrons of Rutherford’s model would be expected to lose energy because
+                </label>
+                <!-- //c -->
+                <p> <label><input type="radio" name='atoms6'>They jump on the nucleus</label></p>
+                <p><label><input type="radio" name='atoms6'>They move randomly</label></p>
+                <p> <label><input type="radio" name='atoms6'>Radiate electromagnetic waves</label></p>
+                <p><label><input type="radio" name='atoms6'>Escape from the atom</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.7 Who discovered the first spectral series?
+                </label>
+                <!-- //b -->
+                <p> <label><input type="radio" name='atoms7'>Lyman</label></p>
+                <p><label><input type="radio" name='atoms7'>Balmer</label></p>
+                <p> <label><input type="radio" name='atoms7'>Paschen</label></p>
+                <p><label><input type="radio" name='atoms7'>Pfund</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.8 Which of the following did Bohr use to explain his theory?
+                </label>
+                <!-- //c -->
+                <p> <label><input type="radio" name='atoms8'>Quantization of angular momentum</label></p>
+                <p><label><input type="radio" name='atoms8'>Conservation of Quantum frequency</label></p>
+                <p> <label><input type="radio" name='atoms8'>Conservation of Mass</label></p>
+                <p><label><input type="radio" name='atoms8'>Conservation of Linear Momentum</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.9 The first model of the atom was proposed by
+                </label>
+                <!-- //c -->
+                <p> <label><input type="radio" name='atoms9'>Neils Bohr</label></p>
+                <p><label><input type="radio" name='atoms9'>Albert Einstein</label></p>
+                <p> <label><input type="radio" name='atoms9'>J.J Thompson</label></p>
+                <p><label><input type="radio" name='atoms9'>Ernest Rutherford</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.10 The significant result deduced from Rutherford’s scattering experiment is
+                    that
+                </label>
+                <!-- //a -->
+                <p> <label><input type="radio" name='atoms10'>The whole of the positive charge is concentrated at the
+                        centre of an atom</label></p>
+                <p><label><input type="radio" name='atoms10'>There are neutrons inside the nucleus</label></p>
+                <p> <label><input type="radio" name='atoms10'>α-particles are hydrogen nuclei</label></p>
+                <p><label><input type="radio" name='atoms10'>Electrons are embedded in the atom</label></p>
+            </label>
+
+            <button class="sub-btn">Submit</button>
+            <input type="button"value="Grade Me"onClick="getScore(this.form);">
+       
+       <input type="reset" value="Clear"><p>
+       
+       Number of score out of 15 = <input type= text size 20 name= "mark">
+       
+       Score in percentage = <input type=text size=20 name="percentage"><br>
+
+
+        </form>
+        <script>
+       
+            var numQues = 10;
+            
+            var numChoi = 4;
+            
+            var answers = new Array(15);
+            
+           
+            
+            answers[1] = "Nucleus";
+            answers[2] = "Orbiting electrons radiate energy";
+            answers[3] = "Visible";
+            answers[4] = "Circular";
+            answers[5] = "Coulomb’s Force";
+            answers[6] = "Radiate electromagnetic waves";
+            answers[7] = "Balmer";
+            answers[8] = "Quantization of angular momentum";
+            answers[9] = "J.J Thompson";
+            answers[10] = "The whole of the positive charge is concentrated at the centre of an atom";
+
+            
+            
+            function getScore(form) {
+            
+            var score = 0;
+            
+            var currElt;
+            
+            var currSelection;
+            
+            for (i=0; i<numQues; i++) {
+            
+            currElt = i*numChoi;
+            
+            answered=false;
+            
+            for (j=0; j<numChoi; j++) {
+            
+            currSelection = form.elements[currElt + j];
+            
+            if (currSelection.checked) {
+            
+            answered=true;
+            
+            if (currSelection.value == answers[i]) {
+            
+            score++;
+            
+            break;
+            
+            }
+            
+            }
+            
+            }
+            
+            if (answered ===false){alert("Do answer all the questions, Please") ;return false;}
+            
+            }
+            
+            var scoreper = Math.round(score/numQues*100);
+            
+            form.percentage.value = scoreper + "%";
+            
+            form.mark.value=score;
+            
+            }
+            
+            </script>
+             
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

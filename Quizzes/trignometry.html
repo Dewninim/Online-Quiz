@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=+, initial-scale=1.0">
+    <title>Trignometry Quiz</title>
+    <link rel="stylesheet" href="CSS/question_page.css">
+</head>
+
+<body>
+    <div class="cont1">
+        <div class="cont">
+            <h1>Trignometry Quiz</h1>
+        </div>
+    </div>
+    <div class="qut">
+        <style>
+            .navbar {
+        background-color: #01000E;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    }
+     
+    .navbar__container {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 0 50px;
+    }
+     
+    #navbar__logo {
+        background-color: darkslateblue;
+        background-image: linear-gradient(to top,#7760D2 0%, #01000E 100%);
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 2rem;
+    }
+     
+    .fa-gem{
+        margin-right: 0.5rem;
+    }
+     
+    .navbar__menu {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        text-align: center;
+    }
+     
+    .navbar__item {
+        height: 80px;
+    }
+     
+    .navbar__links {
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        padding: 0 1rem;
+        height: 100%;
+    }
+     
+    .navbar__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 1rem;
+        width: 100%;
+    }
+     
+        </style>
+        <nav class="navbar"> 
+            <div class="navbar__container">
+             <a href="/" id="navbar__logo">
+                 <i class="fas fa-gem"></i><i class="fas fa gem"></i>TRIVIO TREK</a>
+             <div class="navbar__toggole" id="mobile-menu">
+                 <span class="bar"></span>
+                 <span class="bar"></span>
+                 <span class="bar"></span>
+             </div>
+             <ul class="navbar__menu">
+                
+                 <li class="navbar__item">
+                    <button onclick="navigateToPage()">Log Out</button>
+
+                    <script>
+                    function navigateToPage() {
+                        window.location.href = "file:///C:/Users/wdewn/Desktop/TrivioTrek/index.html?#";
+                    }
+                    </script>                 </li>
+                 
+             </ul>
+            </div>
+           </nav>
+
+        <form>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.1 Which of the following is the correct value of cot 100.cot 200.cot 600.cot
+                    700.cot 800?
+                </label>
+                <!-- //a -->
+                <p> <label><input type="radio" name='trigno1'>1/√3</label></p>
+                <p><label><input type="radio" name='trigno1'>√3</label></p>
+                <p> <label><input type="radio" name='trigno1'>-1</label></p>
+                <p><label><input type="radio" name='trigno1'>1</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.2 If a sin 450 = b cosec 300, what is the value of a4/b4?
+                </label>
+                <!-- //b -->
+                <p> <label><input type="radio" name='trigno2'>6^3</label></p>
+                <p><label><input type="radio" name='trigno2'>4^3</label></p>
+                <p> <label><input type="radio" name='trigno2'>2^3</label></p>
+                <p><label><input type="radio" name='trigno2'>None of the above</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.3 If tan θ + cot θ = 2, then what is the value of tan100 θ + cot100 θ?
+                </label>
+                <!-- //c -->
+                <p> <label><input type="radio" name='trigno3'>1</label></p>
+                <p><label><input type="radio" name='trigno3'>3</label></p>
+                <p> <label><input type="radio" name='trigno3'>2</label></p>
+                <p><label><input type="radio" name='trigno3'>None of the above</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.4 If the value of α + β = 900, and α : β = 2 : 1, then what is the ratio of
+                    cos α to cos β ?
+                </label>
+                <!-- //c-->
+                <p> <label><input type="radio" name='trigno4'>1 : 3</label></p>
+                <p><label><input type="radio" name='trigno4'>√3 : 1</label></p>
+                <p> <label><input type="radio" name='trigno4'>1 : √3</label></p>
+                <p><label><input type="radio" name='trigno4'>None of the above</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.5 If θ is said to be an acute angle, and 7 sin2 θ + 3 cos2 θ = 4, then what is
+                    the value of tan θ?
+                </label>
+                <!-- //c -->
+                <p> <label><input type="radio" name='trigno5'>1</label></p>
+                <p><label><input type="radio" name='trigno5'>√3</label></p>
+                <p> <label><input type="radio" name='trigno5'>1/√3</label></p>
+                <p><label><input type="radio" name='trigno5'>None of the above</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.6 If tan θ - cot θ = 0, what will be the value of sin θ + cos θ?
+                </label>
+                <!-- //b -->
+                <p> <label><input type="radio" name='trigno6'>1</label></p>
+                <p><label><input type="radio" name='trigno6'>√2</label></p>
+                <p> <label><input type="radio" name='trigno6'>1/√2</label></p>
+                <p><label><input type="radio" name='trigno6'>None of the above</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.7 If θ is said to be an acute angle, and 4 cos2 θ - 1 = 0, then what is the
+                    value of tan (θ - 150)?
+                </label>
+                <!-- //a -->
+                <p> <label><input type="radio" name='trigno7'>1</label></p>
+                <p><label><input type="radio" name='trigno7'>√2</label></p>
+                <p> <label><input type="radio" name='trigno7'>1/√3</label></p>
+                <p><label><input type="radio" name='trigno7'>None of the above</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.8 If the value of θ + φ = π/2, and sin θ = 1/2, what will be the value of
+                    sinφ?
+                </label>
+                <!-- //c -->
+                <p> <label><input type="radio" name='trigno8'>1</label></p>
+                <p><label><input type="radio" name='trigno8'>√2</label></p>
+                <p> <label><input type="radio" name='trigno8'>√3/2</label></p>
+                <p><label><input type="radio" name='trigno8'>2/√3</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.9 What will be the value of 2cos2 θ - 1, if cos4 θ - sin4 θ = 2/3?
+                </label>
+                <!-- //d -->
+                <p> <label><input type="radio" name='trigno9'>1</label></p>
+                <p><label><input type="radio" name='trigno9'>2</label></p>
+                <p> <label><input type="radio" name='trigno9'>3/2</label></p>
+                <p><label><input type="radio" name='trigno9'>2/3</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.10 What is the value of tan θ/(1 - cot θ) + cot θ/(1 - tan θ)?
+                </label>
+                <!-- //a -->
+                <p> <label><input type="radio" name='trigno10'>tan θ + cot θ + 1</label></p>
+                <p><label><input type="radio" name='trigno10'>tan θ - cot θ - 1</label></p>
+                <p> <label><input type="radio" name='trigno10'>tan θ - cot θ + 1</label></p>
+                <p><label><input type="radio" name='trigno10'>None of the above</label></p>
+            </label>
+
+            <button class="sub-btn">Submit</button>
+            <input type="button"value="Grade Me"onClick="getScore(this.form);">
+       
+       <input type="reset" value="Clear"><p>
+       
+       Number of score out of 15 = <input type= text size 20 name= "mark">
+       
+       Score in percentage = <input type=text size=20 name="percentage"><br>
+
+
+        </form>
+        <script>
+       
+            var numQues = 10;
+            
+            var numChoi = 4;
+            
+            var answers = new Array(15);
+            
+           
+            
+            answers[1] = "1";
+            answers[2] = "6^3";
+            answers[3] = "1";
+            answers[4] = "√3 : 1";
+            answers[5] = "1/√3";
+            answers[6] = "√2";
+            answers[7] = "√3";
+            answers[8] = "2/√3";
+            answers[9] = "2";
+            answers[10] = "tan θ - cot θ - 1";
+
+                        
+            function getScore(form) {
+            
+            var score = 0;
+            
+            var currElt;
+            
+            var currSelection;
+            
+            for (i=0; i<numQues; i++) {
+            
+            currElt = i*numChoi;
+            
+            answered=false;
+            
+            for (j=0; j<numChoi; j++) {
+            
+            currSelection = form.elements[currElt + j];
+            
+            if (currSelection.checked) {
+            
+            answered=true;
+            
+            if (currSelection.value == answers[i]) {
+            
+            score++;
+            
+            break;
+            
+            }
+            
+            }
+            
+            }
+            
+            if (answered ===false){alert("Do answer all the questions, Please") ;return false;}
+            
+            }
+            
+            var scoreper = Math.round(score/numQues*100);
+            
+            form.percentage.value = scoreper + "%";
+            
+            form.mark.value=score;
+            
+            }
+            
+            </script>
+             
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

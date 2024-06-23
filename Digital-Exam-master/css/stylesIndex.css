@@ -1,0 +1,153 @@
+body
+{
+	margin:0px;
+	padding:0px;
+	background-image:url(../images/background.png);
+	background-size:cover;
+	background-attachment:fixed;
+}
+
+.main
+{
+	
+	height:auto;
+	margin:auto;
+	margin-top:85px;
+	padding:0px;
+	background-image:url(../images/logo.png);
+	width:960px;
+	border: 1px solid white;
+	box-shadow:5px 10px 10px #333333;
+	border-radius:20px;		
+}
+
+
+.header
+{
+	 height:50px;
+	 padding:0px;
+	 margin-top: 0px;	  
+}
+
+#indexlogodiv
+{
+   margin-left:auto;
+   margin-right:auto;
+   padding: 0px;
+   margin-top:15px;
+   width:420px;
+   background-color: #F0676D;
+   border-radius: 45px;
+   margin-bottom: 0px;
+}
+
+#indexlogodiv img
+{
+   width:360px;
+   margin-left: 25px;
+   align:center;
+
+}
+
+#indexHR
+{
+  
+	border: 1px solid black;
+	margin-top: 14px;
+	background-color: black;
+	width: 820px;
+  }
+  
+
+
+
+
+#title
+{	
+	font-size:22px;
+	text-align:center;
+	margin-top: 0px;
+	padding-top: 0px;
+	
+}
+
+#title a
+{
+	color:#6D9455;
+	
+	font-family:"Times New Roman", Times, serif;
+	text-decoration:underline;	
+	
+}
+
+
+.container
+{
+	height:355px;	
+}
+
+
+#sideMenu
+{
+	margin-top:100px;
+	width:240px;	
+}
+
+#sideMenu ul
+{
+	list-style:none;
+	
+		
+}
+
+#sideMenu ul li
+{
+	
+    font-size:30px;
+	height:45px;
+	margin-top:30px;
+	margin-left:50px;
+	text-align:center;
+	border:1px solid #060;
+	border-radius:35px;
+	box-shadow:2px 5px 7px #060;
+		
+}
+
+#sideMenu ul li a
+{
+	margin:5px;
+	display:block;
+	color:#F0676D;
+	text-decoration:none;	
+}
+
+#sideMenu ul li:hover
+{
+	background-color:#5BC5F6;
+		
+}
+
+#sideMenu ul li a:hover
+{
+
+	color:black;
+	font-size:33px;
+}
+
+
+
+.footer
+{
+	text-align:center;
+	vertical-align:middle;
+	height:40px;
+	padding-top:0px;
+	margin-top:-5px;
+}
+
+#footercopyright
+{
+ font-size: 21px; 
+
+}

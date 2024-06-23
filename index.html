@@ -1,0 +1,2556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    
+    
+    <style>
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+        .animated-text {
+            display: inline-block;
+            animation: bounce 2s infinite;
+        }
+    </style>
+    <title>TrivioTrek - Quiz Website</title>
+
+    <meta name="appleid-signin-client-id" content="[CLIENT_ID]">
+        <meta name="appleid-signin-scope" content="[SCOPES]">
+        <meta name="appleid-signin-redirect-uri" content="[REDIRECT_URI]">
+        <meta name="appleid-signin-state" content="[STATE]">
+</head> 
+
+
+<body>
+
+<!-- Home Page -->
+<div class="container" id="homePage">
+   
+
+    <h1 class="animated-text" style="font-family: irish 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 500%; color: white
+    ; ">TrivioTrek</h1>
+</div>
+
+<!-- Page 2 -->
+<div class="container1" id="page2" style="display: none;">
+    <div id="box" style="margin-top: -5%; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-size: 200%;  "><b>TrivioTrek</b></div>
+    
+    <div class="header-text">
+        <h1 style="color: aliceblue; text-align: center start">Quiz your way to brilliance; <br>every correct answer sparks <br>a symphony of  <span class="multiText"></span></h1>
+        
+        <a href="#" onclick="navigate('page2', 'page4');" class="btn3" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: right;right: 0;">Log in</a>
+    </div> 
+    
+    <a href="#" onclick="navigate('page2', 'page3');" class="btny" style="font-size: 120%;">Create an account</a>
+</div>
+
+<!-- Page 3 -->
+<div class="container2" id="page3" style="display: none;">
+    <div class="box" style="margin-top: -5%; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 200%; left: 20; "><b>TrivioTrek</b></div>
+
+    <h1 style=" text-align: center  "><b>Create an account</b></h1>
+  
+    <a href="#" onclick="navigate('page2', 'page3');" class="btn" style="display: none;">Back</a>
+    <a href="#" onclick="navigate('page3', 'page4');" class="nav"><b> Already have an account   Log in</b></a>
+    
+
+    <div class="contact-right">
+        <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="Password" name="email" placeholder="Password" required>
+            
+            <div class="custom-dropdown">
+                <select name="age" id="ageDropdown" required>
+                    <option value="Age 2-10">Age 2-10</option>
+                    <option value="Age 10-16">Age 10-16</option>
+                    <option value="Age over16">Age Over 16</option>
+                </select>
+            </div>
+           
+            <button type="submit" class="btn01" style="font-size: 120%;" > Sign up</button>
+            
+          
+        </form>
+        <span id="msg"></span>
+    </div>
+</div>
+
+<!-- Page 4 -->
+<div class="container3" id="page4" style="display: none;">
+    <div id="box" style="margin-top: -5%; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-size: 200%; "><b>TrivioTrek</b></div>
+
+    <h1 style=" text-align: center  "><b>Sign up with your email</b></h1>
+    
+    <a href="#" onclick="navigate('page3', 'page4');" class="btn">Back</a>
+    <a href="#" onclick="navigate('page4', 'page5');" class="btn">Next</a>
+
+
+    <div class="contact-right">
+        <form name="submit-to-google-sheet">
+            <input type="email" name="Name" placeholder="Your Email" required>
+            <input type="Password" name="email" placeholder="Password" required>
+
+            
+            
+            <button type="submit" class="btn0" style="font-size: 120%;" > Sign up</button>
+
+            <script src="https://accounts.google.com/gsi/client" async></script>
+
+            
+            
+    <div id="g_id_onload"
+        data-client_id="YOUR_GOOGLE_CLIENT_ID"
+        data-login_uri="https://your.domain/your_login_endpoint"
+        data-auto_prompt="false">
+    </div>
+    <div class="g_id_signin" style=" width: 55%; border: -1; padding: 15px;
+    margin: 15px 0;
+    color: #000000;
+    font-size: 18px;
+    border-radius: 6px; 
+    position: absolute;
+    top: 400px;
+    left: 8px;"
+        data-type="standard"
+        data-size="larger"
+        data-theme="outline"
+        data-text="sign_in_with"
+        data-shape="rectangular"
+        data-logo_alignment="left">
+    </div>
+
+    <div id="appleid-signin" class="signin-button"  style=" width: 55%; border: 4;padding: 3px;
+    margin: 20px 0;
+    margin-left: 100;
+    color: #000000;
+    font-size: 18px;
+    border-radius: 6px; position: absolute;
+    top: 470px;" data-color="black"    data-border="true" data-type="sign-in"></div>
+        <script type="text/javascript" src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"></script>
+
+        <div class="mt-2" >
+            <button type="button" id="microsoft-login-button"  style=" width: 56%; border: -1; padding: 9px;
+            margin: 15px 0;
+            color: #000000;
+            font-size: 18px;
+            border-radius: 6px; 
+            position: absolute;
+            top: 540px;"
+                    class="w-full py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-primary-600 transition-colors text-sm dark:border-gray-700 dark:focus:ring-offset-gray-800">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+                    <rect x="1" y="1" width="9" height="9" fill="#f25022"/>
+                    <rect x="1" y="11" width="9" height="9" fill="#00a4ef"/>
+                    <rect x="11" y="1" width="9" height="9" fill="#7fba00"/>
+                    <rect x="11" y="11" width="9" height="9" fill="#ffb900"/>
+                </svg>
+                Microsoft
+            </button>
+        </div>
+            
+        </form>
+        <span id="msg"></span>
+    </div>
+</div>
+
+
+<!-- Page 5 -->
+<div class="container4" id="page5" style="display: none;">
+    
+    <!--Navbar Section-->
+<nav class="navbar"> 
+    <div class="navbar__container">
+     <a href="/" id="navbar__logo">
+         <i class="fas fa-gem"></i><i class="fas fa gem"></i>TRIVIO TREK</a>
+     <div class="navbar__toggole" id="mobile-menu">
+         <span class="bar"></span>
+         <span class="bar"></span>
+         <span class="bar"></span>
+     </div>
+     <ul class="navbar__menu">
+         <li class="navbar__item">
+             <a href="#"href="#" onclick="navigate('page5', 'page5');" class="navbar__links">HOME</a>
+         </li>
+         <li class="navbar__item">
+             <a href="#"href="#" onclick="navigate('page5', 'page6');" class="navbar__links">DASHBOARD</a>
+         </li>
+         <li class="navbar__item">
+             <a href="#"href="#" onclick="navigate('page5', 'page7');" class="navbar__links">MY ACCOUNT</a>
+         </li>
+         <li class="navbar__item">
+             <a href="#" href="#"onclick="navigate('page5', 'page2');"class="button">LOG OUT</a>
+         </li>
+     </ul>
+    </div>
+   </nav>
+    
+   <!--Hero Section-->
+   <div class="main">
+     <div class="main__container">
+         <div class="main__content">
+            
+             <h1>Unlock Knowledge</h1>
+             <h2>Ace Quizzes</h2>
+             <button1 class="main__btn"><a href="#"href="#" onclick="navigate('page5', 'page31');">CREATE QUIZ</a></button1>
+             <button2 class="main__btn1"><a href="#" onclick="navigate('page5', 'page6');">EXPLORE QUIZES</a></button2>
+         </div>
+         <div class="main__img--container">
+             <img src="im/qimg.png.jpg" alt="pic" id="main__img">
+         </div>
+     </div>
+   </div>
+
+
+    
+    <a href="#" onclick="navigate('page4', 'page5');" class="btn" style="display: none;">Back</a>
+  
+</div>
+
+<!-- Page 6 -->
+
+<div class="container6" id="page6" style="display: none; ">
+
+   
+
+    <nav class="navbar"> 
+        <div class="navbar__container">
+         <a href="/" id="navbar__logo">
+             <i class="fas fa-gem"></i><i class="fas fa gem"></i>TRIVIO TREK</a>
+         <div class="navbar__toggole" id="mobile-menu">
+             <span class="bar"></span>
+             <span class="bar"></span>
+             <span class="bar"></span>
+         </div>
+         <ul class="navbar__menu">
+             <li class="navbar__item">
+                 <a href="#" onclick="navigate('page6', 'page5');" class="navbar__links">HOME</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#" onclick="navigate('page6', 'page20');" class="navbar__links">LEADERBOARD</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#" onclick="navigate('page6', 'page30');" class="navbar__links">MY ACCOUNT</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"onclick="navigate('page6', 'page2');"class="button">LOG OUT</a>
+             </li>
+         </ul>
+        </div>
+       </nav>
+       
+
+       
+
+       <form>
+       
+
+        <script type="text/javascript">
+            function search() {
+            let filter = document.getElementById('find').value.toUpperCase();
+            let item = document.querySelectorAll('.subject');
+            let l = document.getElementsByTagName('h3');
+            for(var i = 0;i<=l.length;i++){
+            let a=item[i].getElementsByTagName('h3')[0];
+            let value=a.innerHTML || a.innerText || a.textContent;
+            if(value.toUpperCase().indexOf(filter) > -1) {
+            item[i].style.display="";
+            }
+            else
+            {
+            item[i].style.display="none";
+            }
+            }
+            }
+            </script>
+        <script src="Quizzes/script.js"></script>
+        <div class="search-results">
+            <!-- Results will be displayed here -->
+        </div>
+    </form>
+
+
+    <div class="container-fluid" >
+    <style>
+    *
+    {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    }
+   
+    
+
+    .container-fluid
+    {
+    width: 100%;
+    height: auto;
+    padding: 0px 0px 80px 0px;
+    }
+    .container-d
+    {
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    }
+    .container-d .search
+    {
+    display: flex;
+    padding: 30px 0px;
+    justify-content: space-between;
+    }
+    .container-d .search h1
+    {
+    letter-spacing: 3px;
+    display: inline-block;
+    border-bottom: 2px solid green;
+    padding-bottom: 10px;
+    }
+    .container-d .search input
+    {
+    width: 60%;
+    padding: 5px 16px;
+    background: transparent;
+    border: 1px solid #000;
+    font-size: 20px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    outline: none;
+    }
+    .container-d .search input::placeholder
+    {
+    color: green;
+    font-weight: 500;
+    }
+    .container-d .subject-list
+    {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: left;
+    }
+    .container-d .subject-list .subject
+    {
+    margin-top: 30px;
+    }
+    .container-d .subject-list .subject h3
+    {
+    padding-top: 5px;
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-weight: 400;
+    }
+    .container-d .subject-list .subject h4
+    {
+    padding: 3px 0px;
+    color: #48a809;
+    font-weight: 700;
+    letter-spacing: 3px;
+    }
+
+    @media only screen and (max-width: 600px){
+        
+
+        .container-d .search
+        {
+            display: flex;
+            padding: 10px 0px;
+            justify-content: space-between;
+        }
+
+        .container-d .search h1
+        {
+            letter-spacing: 3px;
+            display: inline-block;
+            border-bottom: 2px solid green;
+            padding-bottom: 6px;
+        }
+        .container-d .search input
+        {
+            width: 60%;
+            padding: 5px 16px;
+            background: transparent;
+            border: 1px solid #000;
+            font-size: 20px;
+            text-transform: capitalize;
+            letter-spacing: 2px;
+            outline: none;
+        }
+        .container-d .search input::placeholder
+        {
+            color: green;
+            font-weight: 500;
+        }
+        .container-d .subject-list{
+            display: flex;
+            flex-direction: column;
+        }
+            
+    }
+</style>
+        
+
+        
+            <div class="container-d">
+            <div class="search">
+            <h1>Subjects</h1>
+            <input type="text" name="" id="find" placeholder="search here...." onkeyup="search()">
+            </div>
+            <div class="subject-list">
+            <div class="subject">
+                <div class="card">
+                <div class="work">
+            <img src="ima/work-2.jpg">
+            <div class="layer">
+            <h3>Maths</h3>
+            <button  href="#" onclick="navigate('page6', 'page7');"  type="submit" style="padding: 20px; border-radius: 5px;">Start</button>
+            <a herf="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+            
+            </div>
+                </div>
+            </div>
+            </div>
+            
+            <div class="subject">
+                <div class="card">
+                <div class="work">
+                <img src="ima/work-12.jpg">
+                <div class="layer">
+                <h3>MultiPlayer</h3>
+                <button  href="#" onclick="navigate('page6', 'page21');"  type="submit" style="padding: 20px; border-radius: 5px;">Start</button>
+                <a herf="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+            
+            </div>
+            </div>
+            </div>
+            </div>
+            
+            <div class="subject">
+                <div class="card">
+                <div class="work">
+            <img src="ima/work-1.jpg">
+            <div class="layer">
+            <h3>Science</h3>
+                <button  href="#" onclick="navigate('page6', 'page8');"  type="submit" style="padding: 20px; border-radius: 5px;">Start</button>
+                <a herf="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+            
+            </div>
+            </div>
+            </div>
+            </div>
+            
+            <div class="subject">
+                <div class="card">
+                <div class="work">
+                <img src="ima/work-3.jpg">
+                <div class="layer">
+               
+                <h3>General Knowledge</h3>
+                <button  href="#" onclick="navigate('page6', 'page9');"  type="submit" style="padding: 20px; border-radius: 5px;">Start</button>
+                <a herf="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+            
+            </div>
+            </div>
+            </div>
+            </div>
+            
+            <div class="subject">
+                <div class="card">
+                <div class="work">
+            <img src="ima/work-4.jpg">
+            <div class="layer">
+            <h3>Food</h3>
+            <button  href="#" onclick="navigate('page6', 'page10');"  type="submit" style="padding: 20px; border-radius: 5px;">Start</button>
+            <a herf="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+            
+            </div>
+            </div>
+            </div>
+            </div>
+            
+            <div class="subject">
+                <div class="card">
+                <div class="work">
+                <img src="ima/work-7.jpg">
+                <div class="layer">
+                <h3>Sinhala</h3>
+                <button  href="#" onclick="navigate('page6', 'page11');"  type="submit" style="padding: 20px; border-radius: 5px;">Start</button>
+                <a herf="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+            
+            </div>
+            </div>
+            </div>
+            </div>
+            
+            <div class="subject">
+                <div class="card">
+                <div class="work">
+            <img src="ima/work-6.jpg">
+            <div class="layer">
+            <h3>History</h3>
+            <button  href="#" onclick="navigate('page6', 'page12');"  type="submit" style="padding: 20px; border-radius: 5px;">Start</button>
+            <a herf="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+            
+            </div>
+            </div>
+            </div>
+            </div>
+            
+            <div class="subject">
+                <div class="card">
+                <div class="work">
+                <img src="ima/work-8.jpg">
+                <div class="layer">
+                <h3>Fun</h3>
+                <button  href="#" onclick="navigate('page6', 'page13');"  type="submit" style="padding: 20px; border-radius: 5px;">Start</button>
+                <a herf="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+            
+            </div>
+            </div>
+            </div>
+            </div>
+            
+                <div class="subject">
+                    <div class="card">
+                    <div class="work">
+                    <img src="ima/work-5.jpg">
+                    <div class="layer">
+                    <h3>English</h3>
+                    <button  href="#" onclick="navigate('page6', 'page14');"  type="submit" style="padding: 20px; border-radius: 5px;">Start</button>
+                    <a herf="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+            
+                </div>
+            </div>
+            </div>
+            </div>
+                    
+                    
+            </div>
+            </div>
+            </div>  
+    </div>
+
+<!-- Page 7 -->
+<div class="container7" id="page7" style="display: none;">
+    <nav class="navbar"> 
+        <div class="navbar__container">
+         <a href="/" id="navbar__logo">
+             <i class="fas fa-gem"></i><i class="fas fa gem"></i>TRIVIO TREK</a>
+         <div class="navbar__toggole" id="mobile-menu">
+             <span class="bar"></span>
+             <span class="bar"></span>
+             <span class="bar"></span>
+         </div>
+         <ul class="navbar__menu">
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page7', 'page5');" class="navbar__links">HOME</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page7', 'page6');" class="navbar__links">DASHBOARD</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page7', 'page22');" class="navbar__links">MY ACCOUNT</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#" href="#"onclick="navigate('page7', 'page2');"class="button">LOG OUT</a>
+             </li>
+         </ul>
+        </div>
+       </nav>
+    
+    
+    <div class="content">
+        <div class="cards">
+          <div class="card">
+          <div class="work">
+            <img src="ima/work-9.jpg"> 
+            <div class="layer">
+             
+               <h1> <p style="color: aliceblue;">Kids</p></h1>
+               <button href="#" onclick="navigate('page7', 'page16');" type="submit" style="padding: 20px; border-radius: 5px;">Start</button>
+    
+                <a herf="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+          </div>
+    
+          
+          <div class="card">
+            <div class="work">
+              <img src="ima/work-10.jpg"> 
+              <div class="layer">
+                  
+                 <h1> <p style="color: aliceblue;">Medium</p></h1>
+                 <button  href="#" onclick="navigate('page7', 'page24');"  type="submit" style="padding: 20px; border-radius: 5px;">Start</button>
+      
+                  <a herf="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+          </div>
+          </div> 
+    
+          <div class="card">
+            <div class="work">
+              <img src="ima/work-11.jpg"> 
+              <div class="layer">
+                  
+                 <h1> <p style="color: aliceblue;">Hard</p></h1>
+                 <button  href="#" onclick="navigate('page7', 'page23');" type="submit" style="padding: 20px; border-radius: 5px;">Start</button>
+      
+                  <a herf="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+          </div>
+          </div> 
+        </div>
+    </div> 
+        
+   
+   
+</div>
+
+<!-- Page 8 -->
+<div class="container8" id="page8" style="display: none;">
+    
+    <nav class="navbar"> 
+        <div class="navbar__container">
+         <a href="/" id="navbar__logo">
+             <i class="fas fa-gem"></i><i class="fas fa gem"></i>TRIVIO TREK</a>
+         <div class="navbar__toggole" id="mobile-menu">
+             <span class="bar"></span>
+             <span class="bar"></span>
+             <span class="bar"></span>
+         </div>
+         <ul class="navbar__menu">
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page8', 'page5');" class="navbar__links">HOME</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page8', 'page6');" class="navbar__links">DASHBOARD</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page8', 'page22');" class="navbar__links">MY ACCOUNT</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#" href="#"onclick="navigate('page8', 'page2');"class="button">LOG OUT</a>
+             </li>
+         </ul>
+        </div>
+       </nav>
+
+
+    
+       <div class="content">
+        <div class="cards">
+          <div class="card">
+          <div class="work">
+            <img src="ima/work-9.jpg"> 
+            <div class="layer">
+             
+               <h1> <p style="color: aliceblue;">Kids</p></h1>
+               <button href="#" onclick="navigate('page8', 'page28');" type="submit" style="padding: 20px; border-radius: 5px;">Start</button>
+    
+                <a herf="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+          </div>
+    
+          
+          <div class="card">
+            <div class="work">
+              <img src="ima/work-10.jpg"> 
+              <div class="layer">
+                  
+                 <h1> <p style="color: aliceblue;">Medium</p></h1>
+                 <button  href="#" onclick="navigate('page8', 'page25');"  type="submit" style="padding: 20px; border-radius: 5px;">Start</button>
+      
+                  <a herf="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+          </div>
+          </div> 
+    
+          <div class="card">
+            <div class="work">
+              <img src="ima/work-11.jpg"> 
+              <div class="layer">
+                  
+                 <h1> <p style="color: aliceblue;">Hard</p></h1>
+                 <button  href="#" onclick="navigate('page8', 'page26');" type="submit" style="padding: 20px; border-radius: 5px;">Start</button>
+      
+                  <a herf="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+          </div>
+          </div> 
+        </div>
+    </div> 
+</div>
+
+
+
+<!-- Page 9 -->
+<div class="container9" id="page9" style="display: none;">
+
+    <nav class="navbar"> 
+        <div class="navbar__container">
+         <a href="/" id="navbar__logo">
+             <i class="fas fa-gem"></i><i class="fas fa gem"></i>TRIVIO TREK</a>
+         <div class="navbar__toggole" id="mobile-menu">
+             <span class="bar"></span>
+             <span class="bar"></span>
+             <span class="bar"></span>
+         </div>
+         <ul class="navbar__menu">
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page9', 'page5');" class="navbar__links">HOME</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page9', 'page6');" class="navbar__links">DASHBOARD</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page9', 'page22');" class="navbar__links">MY ACCOUNT</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#" href="#"onclick="navigate('page9', 'page2');"class="button">LOG OUT</a>
+             </li>
+         </ul>
+        </div>
+       </nav>
+
+    <h1>page9</h1>
+
+
+    
+    <div class="content">
+        <div class="cards">
+          <div class="card">
+          <div class="work">
+            <img src="ima/work-9.jpg"> 
+            <div class="layer">
+             
+               <h1> <p style="color: aliceblue;">Kids</p></h1>
+               <button href="#" onclick="navigate('page6', 'page7');" type="submit" style="padding: 20px; border-radius: 5px;">Start</button>
+    
+                <a herf="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+          </div>
+    
+          
+          <div class="card">
+            <div class="work">
+              <img src="ima/work-10.jpg"> 
+              <div class="layer">
+                  
+                 <h1> <p style="color: aliceblue;">Medium</p></h1>
+                 <button  href="#" onclick="navigate('page6', 'page27');"  type="submit" style="padding: 20px; border-radius: 5px;">Start</button>
+      
+                  <a herf="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+          </div>
+          </div> 
+    
+          <div class="card">
+            <div class="work">
+              <img src="ima/work-11.jpg"> 
+              <div class="layer">
+                  
+                 <h1> <p style="color: aliceblue;">Hard</p></h1>
+                 <button  href="#" onclick="navigate('page6', 'page9');" type="submit" style="padding: 20px; border-radius: 5px;">Start</button>
+      
+                  <a herf="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+          </div>
+          </div> 
+        </div>
+    </div> 
+        
+    
+        
+
+    
+</div>
+
+
+<!-- Page 10 -->
+<div class="container10" id="page10" style="display: none;">
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hidesidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#" onclick="navigate('page8', 'page5');" class="navbar__links">Home</a></li>
+            <li><a href="#" onclick="navigate('page8', 'page6');" class="navbar__links">Dashboard</a></li>
+            <li><a href="#" onclick="navigate('page8', 'page7');" class="navbar__links">Myaccount</a></li>
+            <li><a href="#" onclick="navigate('page8', 'page2');" class="navbar__links">Logout</a></li>
+        </ul>
+        
+        
+        <ul>
+            
+        
+            <li onclick= showsidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+        
+    </nav>
+
+    <nav class="navbar"> 
+        <div class="navbar__container">
+         <a href="/" id="navbar__logo">
+             <i class="fas fa-gem"></i><i class="fas fa gem"></i>TRIVIO TREK</a>
+         <div class="navbar__toggole" id="mobile-menu">
+             <span class="bar"></span>
+             <span class="bar"></span>
+             <span class="bar"></span>
+         </div>
+         <ul class="navbar__menu">
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page10', 'page5');" class="navbar__links">HOME</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page10', 'page6');" class="navbar__links">DASHBOARD</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page10', 'page22');" class="navbar__links">MY ACCOUNT</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#" href="#"onclick="navigate('page10', 'page2');"class="button">LOG OUT</a>
+             </li>
+         </ul>
+        </div>
+       </nav>
+    
+    <div class="content">
+        <div class="cards">
+          <div class="card">
+          <div class="work">
+            <img src="ima/work-9.jpg"> 
+            <div class="layer">
+             
+               <h1> <p style="color: aliceblue;">Kids</p></h1>
+               <button href="#" onclick="navigate('page6', 'page7');" type="submit" style="padding: 20px; border-radius: 5px;">Start</button>
+    
+                <a herf="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+          </div>
+    
+          
+          <div class="card">
+            <div class="work">
+              <img src="ima/work-10.jpg"> 
+              <div class="layer">
+                  
+                 <h1> <p style="color: aliceblue;">Medium</p></h1>
+                 <button  href="#" onclick="navigate('page6', 'page8');"  type="submit" style="padding: 20px; border-radius: 5px;">Start</button>
+      
+                  <a herf="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+          </div>
+          </div> 
+    
+          <div class="card">
+            <div class="work">
+              <img src="ima/work-11.jpg"> 
+              <div class="layer">
+                  
+                 <h1> <p style="color: aliceblue;">Hard</p></h1>
+                 <button  href="#" onclick="navigate('page6', 'page9');" type="submit" style="padding: 20px; border-radius: 5px;">Start</button>
+      
+                  <a herf="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+          </div>
+          </div> 
+        </div>
+    </div> 
+        
+        
+
+    
+</div>
+
+
+<!-- Page 11 -->
+<div class="container11" id="page11" style="display: none;">
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hidesidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#" onclick="navigate('page8', 'page5');" class="navbar__links">Home</a></li>
+            <li><a href="#" onclick="navigate('page8', 'page6');" class="navbar__links">Dashboard</a></li>
+            <li><a href="#" onclick="navigate('page8', 'page7');" class="navbar__links">Myaccount</a></li>
+            <li><a href="#" onclick="navigate('page8', 'page2');" class="navbar__links">Logout</a></li>
+        </ul>
+        
+        
+        <ul>
+            
+        
+            <li onclick= showsidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+        
+    </nav>
+
+
+    <nav class="navbar"> 
+        <div class="navbar__container">
+         <a href="/" id="navbar__logo">
+             <i class="fas fa-gem"></i><i class="fas fa gem"></i>TRIVIO TREK</a>
+         <div class="navbar__toggole" id="mobile-menu">
+             <span class="bar"></span>
+             <span class="bar"></span>
+             <span class="bar"></span>
+         </div>
+         <ul class="navbar__menu">
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page11', 'page5');" class="navbar__links">HOME</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page11', 'page6');" class="navbar__links">DASHBOARD</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page11', 'page22');" class="navbar__links">MY ACCOUNT</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#" href="#"onclick="navigate('page11', 'page2');"class="button">LOG OUT</a>
+             </li>
+         </ul>
+        </div>
+       </nav>
+    
+    <div class="content">
+        <div class="cards">
+          <div class="card">
+          <div class="work">
+            <img src="ima/work-9.jpg"> 
+            <div class="layer">
+             
+               <h1> <p style="color: aliceblue;">Kids</p></h1>
+               <button href="#" onclick="navigate('page6', 'page7');" type="submit" style="padding: 20px; border-radius: 5px;">Start</button>
+    
+                <a herf="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+          </div>
+    
+          
+          <div class="card">
+            <div class="work">
+              <img src="ima/work-10.jpg"> 
+              <div class="layer">
+                  
+                 <h1> <p style="color: aliceblue;">Medium</p></h1>
+                 <button  href="#" onclick="navigate('page6', 'page8');"  type="submit" style="padding: 20px; border-radius: 5px;">Start</button>
+      
+                  <a herf="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+          </div>
+          </div> 
+    
+          <div class="card">
+            <div class="work">
+              <img src="ima/work-11.jpg"> 
+              <div class="layer">
+                  
+                 <h1> <p style="color: aliceblue;">Hard</p></h1>
+                 <button  href="#" onclick="navigate('page6', 'page9');" type="submit" style="padding: 20px; border-radius: 5px;">Start</button>
+      
+                  <a herf="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+          </div>
+          </div> 
+        </div>
+    </div> 
+        
+        
+
+   
+</div>
+
+
+
+<!-- Page 12 -->
+<div class="container12" id="page12" style="display: none;">
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hidesidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#" onclick="navigate('page8', 'page5');" class="navbar__links">Home</a></li>
+            <li><a href="#" onclick="navigate('page8', 'page6');" class="navbar__links">Dashboard</a></li>
+            <li><a href="#" onclick="navigate('page8', 'page7');" class="navbar__links">Myaccount</a></li>
+            <li><a href="#" onclick="navigate('page8', 'page2');" class="navbar__links">Logout</a></li>
+        </ul>
+        
+        
+        <ul>
+            
+        
+            <li onclick= showsidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+        
+    </nav>
+
+    <nav class="navbar"> 
+        <div class="navbar__container">
+         <a href="/" id="navbar__logo">
+             <i class="fas fa-gem"></i><i class="fas fa gem"></i>TRIVIO TREK</a>
+         <div class="navbar__toggole" id="mobile-menu">
+             <span class="bar"></span>
+             <span class="bar"></span>
+             <span class="bar"></span>
+         </div>
+         <ul class="navbar__menu">
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page12', 'page5');" class="navbar__links">HOME</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page12', 'page6');" class="navbar__links">DASHBOARD</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page12', 'page22');" class="navbar__links">MY ACCOUNT</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#" href="#"onclick="navigate('page12', 'page2');"class="button">LOG OUT</a>
+             </li>
+         </ul>
+        </div>
+       </nav>
+    
+    <div class="content">
+        <div class="cards">
+          <div class="card">
+          <div class="work">
+            <img src="ima/work-9.jpg"> 
+            <div class="layer">
+             
+               <h1> <p style="color: aliceblue;">Kids</p></h1>
+               <button href="#" onclick="navigate('page6', 'page7');" type="submit" style="padding: 20px; border-radius: 5px;">Start</button>
+    
+                <a herf="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+          </div>
+    
+          
+          <div class="card">
+            <div class="work">
+              <img src="ima/work-10.jpg"> 
+              <div class="layer">
+                  
+                 <h1> <p style="color: aliceblue;">Medium</p></h1>
+                 <button  href="#" onclick="navigate('page6', 'page8');"  type="submit" style="padding: 20px; border-radius: 5px;">Start</button>
+      
+                  <a herf="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+          </div>
+          </div> 
+    
+          <div class="card">
+            <div class="work">
+              <img src="ima/work-11.jpg"> 
+              <div class="layer">
+                  
+                 <h1> <p style="color: aliceblue;">Hard</p></h1>
+                 <button  href="#" onclick="navigate('page6', 'page9');" type="submit" style="padding: 20px; border-radius: 5px;">Start</button>
+      
+                  <a herf="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+          </div>
+          </div> 
+        </div>
+    </div> 
+        
+        
+
+    
+</div>
+
+
+
+
+<!-- Page 13 -->
+<div class="container13" id="page13" style="display: none;">
+    <p>page 13</p>
+
+
+    <nav class="navbar"> 
+        <div class="navbar__container">
+         <a href="/" id="navbar__logo">
+             <i class="fas fa-gem"></i><i class="fas fa gem"></i>TRIVIO TREK</a>
+         <div class="navbar__toggole" id="mobile-menu">
+             <span class="bar"></span>
+             <span class="bar"></span>
+             <span class="bar"></span>
+         </div>
+         <ul class="navbar__menu">
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page13', 'page5');" class="navbar__links">HOME</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page13', 'page6');" class="navbar__links">DASHBOARD</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page13', 'page22');" class="navbar__links">MY ACCOUNT</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#" href="#"onclick="navigate('page13', 'page2');"class="button">LOG OUT</a>
+             </li>
+         </ul>
+        </div>
+       </nav>
+    
+    <div class="content">
+        <div class="cards">
+          <div class="card">
+          <div class="work">
+            <img src="ima/work-9.jpg"> 
+            <div class="layer">
+             
+               <h1> <p style="color: aliceblue;">Kids</p></h1>
+               <button href="#" onclick="navigate('page6', 'page7');" type="submit" style="padding: 20px; border-radius: 5px;">Start</button>
+    
+                <a herf="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+          </div>
+
+    
+          
+          <div class="card">
+            <div class="work">
+              <img src="ima/work-10.jpg"> 
+              <div class="layer">
+                  
+                 <h1> <p style="color: aliceblue;">Medium</p></h1>
+                 <button  href="#" onclick="navigate('page13', 'page17');"  type="submit" style="padding: 20px; border-radius: 5px;">Start</button>
+      
+                  <a herf="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+          </div>
+          </div> 
+    
+          <div class="card">
+            <div class="work">
+              <img src="ima/work-11.jpg"> 
+              <div class="layer">
+                  
+                 <h1> <p style="color: aliceblue;">Hard</p></h1>
+                 <button  href="#" onclick="navigate('page13', 'page14');" type="submit" style="padding: 20px; border-radius: 5px;">Start</button>
+      
+                  <a herf="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+          </div>
+          </div> 
+        </div>
+    </div> 
+        
+        
+
+    
+</div>
+
+
+
+<!-- Page 14 -->
+<div class="container14" id="page14" style="display: none;">
+
+
+    <nav class="navbar"> 
+        <div class="navbar__container">
+         <a href="/" id="navbar__logo">
+             <i class="fas fa-gem"></i><i class="fas fa gem"></i>TRIVIO TREK</a>
+         <div class="navbar__toggole" id="mobile-menu">
+             <span class="bar"></span>
+             <span class="bar"></span>
+             <span class="bar"></span>
+         </div>
+         <ul class="navbar__menu">
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page14', 'page5');" class="navbar__links">HOME</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page14', 'page6');" class="navbar__links">DASHBOARD</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page14', 'page22');" class="navbar__links">MY ACCOUNT</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#" href="#"onclick="navigate('page14', 'page2');"class="button">LOG OUT</a>
+             </li>
+         </ul>
+        </div>
+       </nav>
+    
+    <div class="content">
+        <div class="cards">
+          <div class="card">
+          <div class="work">
+            <img src="ima/work-9.jpg"> 
+            <div class="layer">
+             
+               <h1> <p style="color: aliceblue;">Alphabet</p></h1>
+               <button href="#" onclick="navigate('page6', 'page7');" type="submit" style="padding: 20px; border-radius: 5px;">Start</button>
+    
+                <a herf="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+          </div>
+    
+          
+          <div class="card">
+            <div class="work">
+              <img src="ima/work-10.jpg"> 
+              <div class="layer">
+                  
+                 <h1> <p style="color: aliceblue;">spelling</p></h1>
+                 <button  href="#" onclick="navigate('page14', 'page14');"  type="submit" style="padding: 20px; border-radius: 5px;">Start</button>
+      
+                  <a herf="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+          </div>
+          </div> 
+    
+          <div class="card">
+            <div class="work">
+              <img src="ima/work-11.jpg"> 
+              <div class="layer">
+                  
+                 <h1> <p style="color: aliceblue;"> Grammar </p></h1>
+                 <button  href="#" onclick="navigate('page14', 'page15');" type="submit" style="padding: 20px; border-radius: 5px;">Start</button>
+      
+                  <a herf="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+          </div>
+          </div> 
+        </div>
+    </div> 
+        
+        
+
+    
+</div>
+
+
+
+
+<!-- Page 15 -->
+<div class="container15" id="page15" style="display: none;">
+
+
+    <nav class="navbar"> 
+        <div class="navbar__container">
+         <a href="/" id="navbar__logo">
+             <i class="fas fa-gem"></i><i class="fas fa gem"></i>TRIVIO TREK</a>
+         <div class="navbar__toggole" id="mobile-menu">
+             <span class="bar"></span>
+             <span class="bar"></span>
+             <span class="bar"></span>
+         </div>
+         <ul class="navbar__menu">
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page15', 'page5');" class="navbar__links">HOME</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page15', 'page6');" class="navbar__links">DASHBOARD</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page15', 'page7');" class="navbar__links">MY ACCOUNT</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#" href="#"onclick="navigate('page15', 'page2');"class="button">LOG OUT</a>
+             </li>
+         </ul>
+        </div>
+       </nav>
+    
+       <center><h1>Quiz Questions</h1></center>
+
+       <p>
+       
+       <form name="quiz">
+       
+       <p>
+       
+       <b>Question 1.
+       
+       <br>He -------------------- it.<br></b>
+       
+       <blockquote>
+       
+       <input type="radio" name="q1" value="don't like">don't like<br>
+       
+       <input type="radio" name="q1" value="doesn't like">doesn't like<br>
+       
+       <input type="radio" name="q1" value="doesn't likes">doesn't likes<br>
+       
+       </blockquote>
+       
+       <p><b>
+       
+       <hr>
+       
+       Question 2.
+       
+       <br>They -------------------- here very often.<br></b>
+       
+       <blockquote>
+       
+       <input type="radio" name="q2" value="don't come">don't come<br>
+       
+       <input type="radio" name="q2" value="doesn't come">doesn't come<br>
+       
+       <input type="radio" name="q2" value="doesn't comes">doesn't comes<br>
+       
+       </blockquote>
+       
+       <p><b>
+       
+       <hr>
+       
+       Question 3.
+       
+       <br>John and Mary -------------------- twice a week.<br></b>
+       
+       <blockquote>
+       
+       <input type="radio" name="q3" value="come">come<br>
+       
+       <input type="radio" name="q3" value="comes">comes<br>
+       
+       <input type="radio" name="q3" value="coming">coming<br>
+       
+       </blockquote>
+       
+       <p><b>
+       
+       <hr>
+       
+       Question 4.
+       
+       <br>I -------------------- mind at all.<br></b>
+       
+       <blockquote>
+       
+       <input type="radio" name="q4" value="not">not<br>
+       
+       <input type="radio" name="q4" value="isn't">isn't<br>
+       
+       <input type="radio" name="q4" value="don't">don't<br>
+       
+       </blockquote>
+       
+       <p><b>
+       
+       <hr>
+       
+       Question 5.
+       
+       <br>It -------------------- sense.<br></b>
+       
+       <blockquote>
+       
+       <input type="radio" name="q5" value="don't make">don't make<br>
+       
+       <input type="radio" name="q5" value="doesn't makes">doesn't makes<br>
+       
+       <input type="radio" name="q5" value="doesn't make">doesn't make<br>
+       
+       </blockquote>
+       
+       <p><b>
+       
+       <hr>
+       
+       Question 6.
+       
+       <br>They -------------------- happy.<br></b>
+       
+       <blockquote>
+       
+       <input type="radio" name="q6" value="seem">seem<br>
+       
+       <input type="radio" name="q6" value="seems">seems<br>
+       
+       <input type="radio" name="q6" value="seeming">seeming<br>
+       
+       </blockquote>
+       
+       <p><b>
+       
+       Question 7.
+       
+       <br>You -------------------- to do it.<br></b>
+       
+       <blockquote>
+       
+       <input type="radio" name="q7" value="don't have">don't have<br>
+       
+       <input type="radio" name="q7" value="doesn't have">doesn't have<br>
+       
+       <input type="radio" name="q7" value="doesn't has">doesn't has<br>
+       
+       </blockquote>
+       
+       <p><b>
+       
+       <hr>
+       
+       Question 8.
+       
+       <br>She -------------------- a brother.<br></b>
+       
+       <blockquote>
+       
+       <input type="radio" name="q8" value="doesn't has">doesn't has<br>
+       
+       <input type="radio" name="q8" value="don't has">don't has<br>
+       
+       <input type="radio" name="q8" value="doesn't have">doesn't have<br>
+       
+       </blockquote>
+       
+       <p><b>
+       
+       <hr>
+       
+       Question 9.
+       
+       <br>The journey -------------------- an hour.<br></b>
+       
+       <blockquote>
+       
+       <input type="radio" name="q9" value="take">take<br>
+       
+       <input type="radio" name="q9" value="takes">takes<br>
+       
+       <input type="radio" name="q9" value="taking">taking<br>
+       
+       </blockquote>
+       
+       <p><b>
+       
+       <hr>
+       
+       Question 10.
+       
+       <br>I -------------------- it now.<br></b>
+       
+       <blockquote>
+       
+       <input type="radio" name="q10" value="want">want<br>
+       
+       <input type="radio" name="q10" value="wants">wants<br>
+       
+       <input type="radio" name="q10" value="wanting">wanting<br>
+       
+       </blockquote>
+       
+       <p><b>
+       
+       <hr>
+       
+       Question 11.
+       
+       <br>Peggy -------------------- by bus.<br></b>
+       
+       <blockquote>
+       
+       <input type="radio" name="q11" value="come">come<br>
+       
+       <input type="radio" name="q11" value="comes">comes<br>
+       
+       <input type="radio" name="q11" value="coming">coming<br>
+       
+       </blockquote>
+       
+       <p><b>
+       
+       <hr>
+       
+       Question 12.
+       
+       <br>She --------------------.<br></b>
+       
+       <blockquote>
+       
+       <input type="radio" name="q12" value="don't know">don't know<br>
+       
+       <input type="radio" name="q12" value="doesn't knows">doesn't knows<br>
+       
+       <input type="radio" name="q12" value="doesn't know">doesn't know<br>
+       
+       </blockquote>
+       
+       <p><b>
+       
+       <hr>
+       
+       Question 13.
+       
+       <br>She -------------------- hard.<br></b>
+       
+       <blockquote>
+       
+       <input type="radio" name="q13" value="try">try<br>
+       
+       <input type="radio" name="q13" value="trys">trys<br>
+       
+       <input type="radio" name="q13" value="tries">tries<br>
+       
+       </blockquote>
+       
+       <p><b>
+       
+       <hr>
+       
+       Question 14.
+       
+       <br>They -------------------- football every weekend.<br></b>
+       
+       <blockquote>
+       
+       <input type="radio" name="q14" value="play">play<br>
+       
+       <input type="radio" name="q14" value="plays">plays<br>
+       
+       <input type="radio" name="q14" value="playing">playing<br>
+       
+       </blockquote>
+       
+       <p><b>
+       
+       <hr>
+       
+       Question 15.
+       
+       <br>The exam -------------------- two hours.<br></b>
+       
+       <blockquote>
+       
+       <input type="radio" name="q15" value="last">last<br>
+       
+       <input type="radio" name="q15" value="lastes">lastes<br>
+       
+       <input type="radio" name="q15" value="lasts">lasts<br>
+       
+       </blockquote>
+       
+       <p><b>
+       
+       <input type="button"value="Grade Me"onClick="getScore(this.form);">
+       
+       <input type="reset" value="Clear"><p>
+       
+       Number of score out of 15 = <input type= text size 20 name= "mark">
+       
+       Score in percentage = <input type=text size=20 name="percentage"><br>
+       
+       </form>
+       
+       <p>
+       
+       <form method="post" name="Form" onsubmit="" action="">
+       
+       </form>
+       
+    
+       
+       <script>
+       
+       var numQues = 15;
+       
+       var numChoi = 3;
+       
+       var answers = new Array(15);
+       
+       answers[0] = "doesn't like";
+       
+       answers[1] = "don't come";
+       
+       answers[2] = "come";
+       
+       answers[3] = "don't";
+       
+       answers[4] = "doesn't make";
+       
+       answers[5] = "seem";
+       
+       answers[6] = "don't have";
+       
+       answers[7] = "doesn't have";
+       
+       answers[8] = "takes";
+       
+       answers[9] = "want";
+       
+       answers[10] = "comes";
+       
+       answers[11] = "doesn't know";
+       
+       answers[12] = "tries";
+       
+       answers[13] = "play";
+       
+       answers[14] = "lasts";
+       
+       function getScore(form) {
+       
+       var score = 0;
+       
+       var currElt;
+       
+       var currSelection;
+       
+       for (i=0; i<numQues; i++) {
+       
+       currElt = i*numChoi;
+       
+       answered=false;
+       
+       for (j=0; j<numChoi; j++) {
+       
+       currSelection = form.elements[currElt + j];
+       
+       if (currSelection.checked) {
+       
+       answered=true;
+       
+       if (currSelection.value == answers[i]) {
+       
+       score++;
+       
+       break;
+       
+       }
+       
+       }
+       
+       }
+       
+       if (answered ===false){alert("Do answer all the questions, Please") ;return false;}
+       
+       }
+       
+       var scoreper = Math.round(score/numQues*100);
+       
+       form.percentage.value = scoreper + "%";
+       
+       form.mark.value=score;
+       
+       }
+       
+       </script>
+        
+        
+
+    <a href="#" onclick="navigate('page7', 'page8');" class="btn">Back</a>
+    <a href="#" onclick="navigate('page8', 'page9');" class="btn">Next</a>
+</div>
+
+
+
+<!-- Page 16 -->
+<div class="container16" id="page16" style="display: none;">
+
+
+    <nav class="navbar"> 
+        <div class="navbar__container">
+         <a href="/" id="navbar__logo">
+             <i class="fas fa-gem"></i><i class="fas fa gem"></i>TRIVIO TREK</a>
+         <div class="navbar__toggole" id="mobile-menu">
+             <span class="bar"></span>
+             <span class="bar"></span>
+             <span class="bar"></span>
+         </div>
+         <ul class="navbar__menu">
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page16', 'page5');" class="navbar__links">HOME</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page16', 'page6');" class="navbar__links">DASHBOARD</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page16', 'page7');" class="navbar__links">MY ACCOUNT</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#" href="#"onclick="navigate('page16', 'page2');"class="button">LOG OUT</a>
+             </li>
+         </ul>
+        </div>
+       </nav>
+
+<style>
+.container16  {
+            background-color: #26249c;
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 20px;
+            color: aliceblue; 
+        }
+        #quiz-container {
+            height: 100%;
+            max-width: 600px;
+            margin: auto;
+
+        }
+        .question {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        .options button {
+            width: 600px;
+            font-size: 20px;
+            padding: 20px;
+            margin: 20px;
+            cursor: pointer;
+            border-radius: 10px;
+
+        }
+        #timer {
+            font-size: 26px;
+            margin-top: 20px;
+        }
+        #result {
+            font-size: 40px;
+            font-weight: bold;
+            margin-top: 25px;
+        }
+    </style>
+
+
+<div id="quiz-container">
+    <div id="timer">Time: <span id="time">180</span> seconds</div>
+    <div id="question-container" class="question"></div>
+    <div id="options-container" class="options"></div>
+    <div id="result"></div>
+    <button id="try-again" style="display: none; padding: 30px; margin: 100px; width: 400px; border-radius: 10px; font-size: x-large; margin-top: 20px; background-color: aqua;">Try Again</button>
+</div>
+
+<script>
+
+    
+    const questions = [
+        { question: "1 + 3 =", options: ["2", "3", "4", "5"], correctAnswer: "4" },
+        { question: "2 + 2 =", options: ["3", "4", "5", "6"], correctAnswer: "4" },
+        { question: "3 + 4 =", options: ["4", "7", "8", "10"], correctAnswer: "7" },
+        { question: "4 + 4 =", options: ["8", "10", "12", "14"], correctAnswer: "8" },
+        { question: "5 + 5 =", options: ["10", "12", "15", "20"], correctAnswer: "10" }
+    ];
+
+    let currentQuestion = 0;
+    let score = 0;
+    let timeRemaining = 180;
+    let timer;
+
+    function startQuiz() {
+        displayQuestion();
+        timer = setInterval(updateTimer, 1000);
+    }
+
+    function displayQuestion() {
+        const questionContainer = document.getElementById('question-container');
+        const optionsContainer = document.getElementById('options-container');
+
+        questionContainer.textContent = questions[currentQuestion].question;
+
+        optionsContainer.innerHTML = "";
+        for (let option of questions[currentQuestion].options) {
+            const button = document.createElement('button');
+            button.textContent = option;
+            button.addEventListener('click', () => checkAnswer(option));
+            optionsContainer.appendChild(button);
+        }
+    }
+
+    function checkAnswer(answer) {
+        if (answer === questions[currentQuestion].correctAnswer) {
+            score++;
+        }
+
+        currentQuestion++;
+
+        if (currentQuestion < questions.length) {
+            displayQuestion();
+        } else {
+            clearInterval(timer);
+            displayResult();
+        }
+    }
+
+    function updateTimer() {
+        timeRemaining--;
+        document.getElementById('time').textContent = timeRemaining;
+
+        if (timeRemaining <= 0) {
+            clearInterval(timer);
+            displayResult("Time's up! Try again.");
+            document.getElementById('try-again').style.display = 'block';
+        }
+    }
+
+    function displayResult(message) {
+        const resultContainer = document.getElementById('result');
+        resultContainer.textContent = message || `Result: ${score} out of ${questions.length}`;
+
+        document.getElementById('try-again').style.display = 'block';
+    }
+
+    document.getElementById('try-again').addEventListener('click', () => {
+        currentQuestion = 0;
+        score = 0;
+        timeRemaining = 180;
+        startQuiz();
+        document.getElementById('try-again').style.display = 'none';
+        document.getElementById('result').textContent = '';
+    });
+
+    
+
+    startQuiz();
+</script>
+
+
+</div>
+
+
+
+
+
+<!-- Page 17 -->
+<div class="container17" id="page17" style="display: none;">
+
+
+    <nav class="navbar"> 
+        <div class="navbar__container">
+         <a href="/" id="navbar__logo">
+             <i class="fas fa-gem"></i><i class="fas fa gem"></i>TRIVIO TREK</a>
+         <div class="navbar__toggole" id="mobile-menu">
+             <span class="bar"></span>
+             <span class="bar"></span>
+             <span class="bar"></span>
+         </div>
+         <ul class="navbar__menu">
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page17', 'page5');" class="navbar__links">HOME</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page17', 'page6');" class="navbar__links">DASHBOARD</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page17', 'page22');" class="navbar__links">MY ACCOUNT</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#" href="#"onclick="navigate('page17', 'page2');"class="button">LOG OUT</a>
+             </li>
+         </ul>
+        </div>
+       </nav>
+       <a href="Methara/quiz.html">Play Now</a>
+
+
+</div>
+
+<!-- Page 18 -->
+<div class="container18" id="page18" style="display: none;">
+
+
+    <nav class="navbar"> 
+        <div class="navbar__container">
+         <a href="/" id="navbar__logo">
+             <i class="fas fa-gem"></i><i class="fas fa gem"></i>TRIVIO TREK</a>
+         <div class="navbar__toggole" id="mobile-menu">
+             <span class="bar"></span>
+             <span class="bar"></span>
+             <span class="bar"></span>
+         </div>
+         <ul class="navbar__menu">
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page18', 'page5');" class="navbar__links">HOME</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page18', 'page6');" class="navbar__links">DASHBOARD</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page18', 'page22');" class="navbar__links">MY ACCOUNT</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#" href="#"onclick="navigate('page18', 'page2');"class="button">LOG OUT</a>
+             </li>
+         </ul>
+        </div>
+       </nav>
+
+
+</div>
+
+
+
+<!-- Page 19 -->
+<div class="container19" id="page19" style="display: none; ">
+    <nav class="navbar"> 
+        <div class="navbar__container">
+         <a href="/" id="navbar__logo">
+             <i class="fas fa-gem"></i><i class="fas fa gem"></i>TRIVIO TREK</a>
+         <div class="navbar__toggole" id="mobile-menu">
+             <span class="bar"></span>
+             <span class="bar"></span>
+             <span class="bar"></span>
+         </div>
+         <ul class="navbar__menu">
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page19', 'page5');" class="navbar__links">HOME</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page19', 'page6');" class="navbar__links">DASHBOARD</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page19', 'page7');" class="navbar__links">MY ACCOUNT</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#" href="#"onclick="navigate('page19', 'page2');"class="button">LOG OUT</a>
+             </li>
+         </ul>
+        </div>
+       </nav>
+
+<style>
+   
+    .container19 {
+
+        background-color: #0e8383;
+    }
+    #app {
+      max-width: 1000px;
+      margin: 20 auto;
+    }
+
+    .question {
+      margin-top: 8px;
+      border: 10px solid #ddd;
+      padding: 20px;
+    }
+
+  
+  </style>
+</head>
+
+  <div id="app">
+    <h1 style=" text-align: center  ">Create a Quiz</h1>
+    
+    <!-- Quiz Form -->
+
+    <form @submit.prevent="createQuiz">
+     <h4> <label for="quizName" style="color: #26249c;">Quiz Name:</label></h4>
+      <input type="text" v-model="quizName" required>
+
+     <br><h4><label for="timeLimit" style="color: #26249c;">Time Limit (minutes):</label></h4>
+      <input style="padding: 10px;" type="number" v-model="timeLimit" required></br>
+
+      <!-- Add more question fields dynamically -->
+      <div v-for="(question, index) in questions" :key="index" class="question">
+        <b><h6>
+        <label>Question {{ index + 1 }}:</label>
+        <input type="text" v-model="questions[index].text" required>
+
+        <br><label>Options:</label>
+        <div v-for="(option, optionIndex) in questions[index].options" :key="optionIndex">
+            <input type="text" v-model="questions[index].options[optionIndex]" required>
+        </div>
+
+        <button2 class="btn" type="button" @click="addOption(index)">Add Option</button2>
+        <button2 class="btn" type="button" @click="removeOption(index, optionIndex)">Remove Option</button2>
+      </div>
+
+      <button2 class="btn" type="button" @click="addQuestion">Add Question</button2>
+
+      <button2 class="btn" type="submit">Create Quiz</button2></h6></b>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      data: {
+        quizName: '',
+        timeLimit: 0,
+        questions: [{ text: '', options: [''] }],
+      },
+      methods: {
+        addQuestion() {
+          this.questions.push({ text: '', options: [''] });
+        },
+        addOption(questionIndex) {
+          this.questions[questionIndex].options.push('');
+        },
+        removeOption(questionIndex, optionIndex) {
+          this.questions[questionIndex].options.splice(optionIndex, 1);
+        },
+        createQuiz() {
+          const quizData = {
+            name: this.quizName,
+            timeLimit: this.timeLimit,
+            questions: this.questions,
+          };
+
+          // Send the data to the backend using an API call (Axios, Fetch, etc.)
+      axios.post('http://localhost:3000/api/createQuiz', quizData)
+        .then(response => {
+          console.log(response.data);
+          // Handle successful response, e.g., show a success message to the user
+        })
+        .catch(error => {
+          console.error(error);
+          // Handle error, e.g., show an error message to the user
+        });
+          // You can add the API call here
+        },
+      },
+    });
+  </script>
+</div>
+
+<!-- Page 20 -->
+<div class="container20" id="page20" style="display: none; color: aqua; ">
+    <nav class="navbar"> 
+        <div class="navbar__container">
+         <a href="/" id="navbar__logo">
+             <i class="fas fa-gem"></i><i class="fas fa gem"></i>TRIVIO TREK</a>
+         <div class="navbar__toggole" id="mobile-menu">
+             <span class="bar"></span>
+             <span class="bar"></span>
+             <span class="bar"></span>
+         </div>
+         <ul class="navbar__menu">
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page20', 'page5');" class="navbar__links">HOME</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page20', 'page6');" class="navbar__links">DASHBOARD</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page20', 'page7');" class="navbar__links">MY ACCOUNT</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#" href="#"onclick="navigate('page20', 'page2');"class="button">LOG OUT</a>
+             </li>
+         </ul>
+        </div>
+       </nav>
+
+       
+
+      <center>
+       <h1><a style="color: black;" href="Leader-Board--master/leaderboardindex.html" class="btnn"  style="font-size: 120%;">Go to Leader Board </a></h1></center> 
+       
+</div>
+
+
+
+
+
+<!-- Page 21 -->
+<div class="container21" id="page21" style="display: none; ">
+    <nav class="navbar"> 
+        <div class="navbar__container">
+         <a href="/" id="navbar__logo">
+             <i class="fas fa-gem"></i><i class="fas fa gem"></i>TRIVIO TREK</a>
+         <div class="navbar__toggole" id="mobile-menu">
+             <span class="bar"></span>
+             <span class="bar"></span>
+             <span class="bar"></span>
+         </div>
+         <ul class="navbar__menu">
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page21', 'page5');" class="navbar__links">HOME</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page21', 'page6');" class="navbar__links">DASHBOARD</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page21', 'page22');" class="navbar__links">MY ACCOUNT</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#" href="#"onclick="navigate('page21', 'page2');"class="button">LOG OUT</a>
+             </li>
+         </ul>
+        </div>
+       </nav>
+
+       <h1><a href="project_c89-90-91-92-mathquiz-main/index.html"> Play Now</a></h1>
+</div>
+
+
+</div>
+
+<script src="scripts.js"></script>
+
+
+<!-- Page 22 -->
+<div class="container22" id="page22" style="display: none; ">
+    <nav class="navbar"> 
+        <div class="navbar__container">
+         <a href="/" id="navbar__logo">
+             <i class="fas fa-gem"></i><i class="fas fa gem"></i>TRIVIO TREK</a>
+         <div class="navbar__toggole" id="mobile-menu">
+             <span class="bar"></span>
+             <span class="bar"></span>
+             <span class="bar"></span>
+         </div>
+         <ul class="navbar__menu">
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page22', 'page5');" class="navbar__links">HOME</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page22', 'page6');" class="navbar__links">DASHBOARD</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page22', 'page22');" class="navbar__links">MY ACCOUNT</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#" href="#"onclick="navigate('page22', 'page2');"class="button">LOG OUT</a>
+             </li>
+         </ul>
+        </div>
+       </nav>
+
+
+</div>
+
+
+
+<!-- Page 23 -->
+<div class="container23" id="page23" style="display: none; ">
+    <nav class="navbar"> 
+        <div class="navbar__container">
+         <a href="/" id="navbar__logo">
+             <i class="fas fa-gem"></i><i class="fas fa gem"></i>TRIVIO TREK</a>
+         <div class="navbar__toggole" id="mobile-menu">
+             <span class="bar"></span>
+             <span class="bar"></span>
+             <span class="bar"></span>
+         </div>
+         <ul class="navbar__menu">
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page23', 'page5');" class="navbar__links">HOME</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page23', 'page6');" class="navbar__links">DASHBOARD</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page23', 'page22');" class="navbar__links">MY ACCOUNT</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#" href="#"onclick="navigate('page23', 'page2');"class="button">LOG OUT</a>
+             </li>
+         </ul>
+        </div>
+       </nav>
+       <h2><a href="Quizzes/trignometry.html">Trignometry </a></h2>
+       <h2><a href="Quizzes/algebra.html">Algebra </a></h2>
+    
+
+</div>
+
+
+<!-- Page 24 -->
+<div class="container24" id="page24" style="display: none; ">
+    <nav class="navbar"> 
+        <div class="navbar__container">
+         <a href="/" id="navbar__logo">
+             <i class="fas fa-gem"></i><i class="fas fa gem"></i>TRIVIO TREK</a>
+         <div class="navbar__toggole" id="mobile-menu">
+             <span class="bar"></span>
+             <span class="bar"></span>
+             <span class="bar"></span>
+         </div>
+         <ul class="navbar__menu">
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page24', 'page5');" class="navbar__links">HOME</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page24', 'page6');" class="navbar__links">DASHBOARD</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page24', 'page22');" class="navbar__links">MY ACCOUNT</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#" href="#"onclick="navigate('page24', 'page2');"class="button">LOG OUT</a>
+             </li>
+         </ul>
+        </div>
+       </nav>
+
+       <h2><a href="Quizzes/statistics.html">Statistics </a></h2>
+       <h2><a href="Quizzes/probability.html">Probability </a></h2>
+    
+
+
+</div>
+
+
+<!-- Page 25 -->
+<div class="container25" id="page25" style="display: none; ">
+    <nav class="navbar"> 
+        <div class="navbar__container">
+         <a href="/" id="navbar__logo">
+             <i class="fas fa-gem"></i><i class="fas fa gem"></i>TRIVIO TREK</a>
+         <div class="navbar__toggole" id="mobile-menu">
+             <span class="bar"></span>
+             <span class="bar"></span>
+             <span class="bar"></span>
+         </div>
+         <ul class="navbar__menu">
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page25', 'page5');" class="navbar__links">HOME</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page25', 'page6');" class="navbar__links">DASHBOARD</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page25', 'page22');" class="navbar__links">MY ACCOUNT</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#" href="#"onclick="navigate('page25', 'page2');"class="button">LOG OUT</a>
+             </li>
+         </ul>
+        </div>
+       </nav>
+
+       <h2><a href="Quizzes/subject.html">subject </a></h2>
+       <h2><a href="Quizzes/forest.html">Forest </a></h2>
+    
+
+
+</div>
+
+<!-- Page 26 -->
+<div class="container26" id="page26" style="display: none; ">
+    <nav class="navbar"> 
+        <div class="navbar__container">
+         <a href="/" id="navbar__logo">
+             <i class="fas fa-gem"></i><i class="fas fa gem"></i>TRIVIO TREK</a>
+         <div class="navbar__toggole" id="mobile-menu">
+             <span class="bar"></span>
+             <span class="bar"></span>
+             <span class="bar"></span>
+         </div>
+         <ul class="navbar__menu">
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page26', 'page5');" class="navbar__links">HOME</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page26', 'page6');" class="navbar__links">DASHBOARD</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page26', 'page22');" class="navbar__links">MY ACCOUNT</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#" href="#"onclick="navigate('page26', 'page2');"class="button">LOG OUT</a>
+             </li>
+         </ul>
+        </div>
+       </nav>
+
+       <h2><a href="Quizzes/optics.html">Optics </a></h2>
+       <h2><a href="Quizzes/cells.html">Cells </a></h2>
+    
+
+
+</div>
+
+
+<!-- Page 27 -->
+<div class="container27" id="page27" style="display: none; ">
+    <nav class="navbar"> 
+        <div class="navbar__container">
+         <a href="/" id="navbar__logo">
+             <i class="fas fa-gem"></i><i class="fas fa gem"></i>TRIVIO TREK</a>
+         <div class="navbar__toggole" id="mobile-menu">
+             <span class="bar"></span>
+             <span class="bar"></span>
+             <span class="bar"></span>
+         </div>
+         <ul class="navbar__menu">
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page27', 'page5');" class="navbar__links">HOME</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page27', 'page6');" class="navbar__links">DASHBOARD</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page27', 'page22');" class="navbar__links">MY ACCOUNT</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#" href="#"onclick="navigate('page27', 'page2');"class="button">LOG OUT</a>
+             </li>
+         </ul>
+        </div>
+       </nav>
+
+       <h2><a href="Quizzes/rivers.html">Rivers </a></h2>
+       <h2><a href="Quizzes/country.html">Country </a></h2>
+    
+
+
+</div>
+
+
+<!-- Page 28 -->
+<div class="container28" id="page28" style="display: none; ">
+    <nav class="navbar"> 
+        <div class="navbar__container">
+         <a href="/" id="navbar__logo">
+             <i class="fas fa-gem"></i><i class="fas fa gem"></i>TRIVIO TREK</a>
+         <div class="navbar__toggole" id="mobile-menu">
+             <span class="bar"></span>
+             <span class="bar"></span>
+             <span class="bar"></span>
+         </div>
+         <ul class="navbar__menu">
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page28', 'page5');" class="navbar__links">HOME</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page28', 'page6');" class="navbar__links">DASHBOARD</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page28', 'page22');" class="navbar__links">MY ACCOUNT</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#" href="#"onclick="navigate('page28', 'page2');"class="button">LOG OUT</a>
+             </li>
+         </ul>
+        </div>
+       </nav>
+
+       <h2><a href="Quizzes/periodic_table.html">Periodic Table </a></h2>
+       <h2><a href="Quizzes/atoms.html">Atoms </a></h2>
+    
+
+</div>
+
+
+
+
+<!-- Page 29 -->
+<div class="container29" id="page29" style="display: none; ">
+    <nav class="navbar"> 
+        <div class="navbar__container">
+         <a href="/" id="navbar__logo">
+             <i class="fas fa-gem"></i><i class="fas fa gem"></i>TRIVIO TREK</a>
+         <div class="navbar__toggole" id="mobile-menu">
+             <span class="bar"></span>
+             <span class="bar"></span>
+             <span class="bar"></span>
+         </div>
+         <ul class="navbar__menu">
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page28', 'page5');" class="navbar__links">HOME</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page28', 'page6');" class="navbar__links">DASHBOARD</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page28', 'page22');" class="navbar__links">MY ACCOUNT</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#" href="#"onclick="navigate('page28', 'page2');"class="button">LOG OUT</a>
+             </li>
+         </ul>
+        </div>
+       </nav>
+
+</div>
+
+
+
+
+<!-- Page 30 -->
+<div class="container30" id="page30" style="display: none; ">
+    <nav class="navbar"> 
+        <div class="navbar__container">
+         <a href="/" id="navbar__logo">
+             <i class="fas fa-gem"></i><i class="fas fa gem"></i>TRIVIO TREK</a>
+         <div class="navbar__toggole" id="mobile-menu">
+             <span class="bar"></span>
+             <span class="bar"></span>
+             <span class="bar"></span>
+         </div>
+         <ul class="navbar__menu">
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page28', 'page5');" class="navbar__links">HOME</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page28', 'page6');" class="navbar__links">DASHBOARD</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page28', 'page30');" class="navbar__links">MY ACCOUNT</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#" href="#"onclick="navigate('page28', 'page2');"class="button">LOG OUT</a>
+             </li>
+         </ul>
+        </div>
+       </nav>
+
+
+</div>
+
+
+
+<!-- Page 31 -->
+<div class="container31" id="page31" style="display: none; ">
+    <nav class="navbar"> 
+        <div class="navbar__container">
+         <a href="/" id="navbar__logo">
+             <i class="fas fa-gem"></i><i class="fas fa gem"></i>TRIVIO TREK</a>
+         <div class="navbar__toggole" id="mobile-menu">
+             <span class="bar"></span>
+             <span class="bar"></span>
+             <span class="bar"></span>
+         </div>
+         <ul class="navbar__menu">
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page31', 'page5');" class="navbar__links">HOME</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page31', 'page6');" class="navbar__links">DASHBOARD</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#"href="#" onclick="navigate('page31', 'page30');" class="navbar__links">MY ACCOUNT</a>
+             </li>
+             <li class="navbar__item">
+                 <a href="#" href="#"onclick="navigate('page31', 'page2');"class="button">LOG OUT</a>
+             </li>
+         </ul>
+        </div>
+       </nav>
+
+       <h1><a href="Question-Paper-Generator-main/index.html" class="btnn"  style="font-size: 120%;">Create Quiz</a></h1>
+</div>
+
+<!-- Add more pages as needed -->
+
+
+<!-- multiText -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    var typingEffect = new Typed(".multiText",{
+        strings : ["wisdom","intellect","and triumph"],
+        loop : true,
+        typeSpeed :80,
+        backSpeed :90,
+        backDelay :1500
+    })
+</script>
+</div>
+
+
+
+<!-- navigation -->
+<script src="script.js"></script>
+
+<script>
+    
+    const pages = ['homePage', 'page2', 'page3', 'page4', 'page5','page6', 'page7', 'page8'];
+    let currentPageIndex = 0;
+
+    setTimeout(function() {
+        navigate('homePage', 'page2');
+    }, 500);
+
+    function navigate(currentPageId, nextPageId) {
+        document.getElementById(currentPageId).style.display = 'none';
+        document.getElementById(nextPageId).style.display = 'block';
+
+        const currentIndex = pages.indexOf(currentPageId);
+        const nextIndex = pages.indexOf(nextPageId);
+
+        if (currentIndex !== -1 && nextIndex !== -1) {
+            currentPageIndex = nextIndex;
+        }
+    }
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Backspace' && currentPageIndex > 0) {
+            const currentPageId = pages[currentPageIndex];
+            const previousPageId = pages[currentPageIndex - 1];
+            navigate(currentPageId, previousPageId);
+        }
+    });
+</script>
+
+
+
+
+<!-- sidebar -->
+
+<script>
+    const menu = document.querySelector('#mobile-menu');
+const menuLinks = document.querySelector('.navbar__menu');
+ 
+menu.addEventListener('click', function() {
+    menu.classList.toggle('is-active');
+    menuLinks.classList.toggle('active');
+});
+
+</script>
+
+<script>
+// Get the search input and button
+const input = document.querySelector('.search-input');
+const button = document.querySelector('.search-button');
+const resultsContainer = document.querySelector('.search-results');
+
+// Add event listener to the button
+button.addEventListener('click', () => {
+    // Get the search query
+    const query = input.value.trim();
+
+    // Make an AJAX request to the backend
+    fetch(`/search?query=${query}`)
+        .then(response => response.json())
+        .then(data => {
+            // Clear previous results
+            resultsContainer.innerHTML = '';
+
+            // Display search results
+            data.forEach(result => {
+                const item = document.createElement('div');
+                item.textContent = result;
+                resultsContainer.appendChild(item);
+            });
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+

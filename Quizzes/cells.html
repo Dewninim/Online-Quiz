@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=+, initial-scale=1.0">
+    <title>Cells Quiz</title>
+    <link rel="stylesheet" href="CSS/question_page.css">
+</head>
+
+<body>
+    <div class="cont1">
+        <div class="cont">
+            <h1>Cells Quiz</h1>
+        </div>
+    </div>
+    <div class="qut">
+        <style>
+            .navbar {
+        background-color: #01000E;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    }
+     
+    .navbar__container {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 0 50px;
+    }
+     
+    #navbar__logo {
+        background-color: darkslateblue;
+        background-image: linear-gradient(to top,#7760D2 0%, #01000E 100%);
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 2rem;
+    }
+     
+    .fa-gem{
+        margin-right: 0.5rem;
+    }
+     
+    .navbar__menu {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        text-align: center;
+    }
+     
+    .navbar__item {
+        height: 80px;
+    }
+     
+    .navbar__links {
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        padding: 0 1rem;
+        height: 100%;
+    }
+     
+    .navbar__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 1rem;
+        width: 100%;
+    }
+     
+        </style>
+       <nav class="navbar"> 
+        <div class="navbar__container">
+         <a href="/" id="navbar__logo">
+             <i class="fas fa-gem"></i><i class="fas fa gem"></i>TRIVIO TREK</a>
+         <div class="navbar__toggole" id="mobile-menu">
+             <span class="bar"></span>
+             <span class="bar"></span>
+             <span class="bar"></span>
+         </div>
+         <ul class="navbar__menu">
+            
+             <li class="navbar__item">
+                <button onclick="navigateToPage()">Log Out</button>
+
+                <script>
+                function navigateToPage() {
+                    window.location.href = "file:///C:/Users/wdewn/Desktop/TrivioTrek/index.html?#";
+                }
+                </script>                 </li>
+             
+         </ul>
+        </div>
+       </nav>
+
+        <form>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.1 The term cell was given by
+</label>
+                <!-- //a -->
+                <p> <label><input type="radio" name='cells1'>Robert Hooke</label></p>
+                <p><label><input type="radio" name='cells1'>Tatum</label></p>
+                <p> <label><input type="radio" name='cells1'>Schwann</label></p>
+                <p><label><input type="radio" name='cells1'>De Bary</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.2 The cell is not applied for
+</label>
+                <!-- //c -->
+                <p> <label><input type="radio" name='cells2'>Algae</label></p>
+                <p><label><input type="radio" name='cells2'>Bacteria</label></p>
+                <p> <label><input type="radio" name='cells2'>Virus</label></p>
+                <p><label><input type="radio" name='cells2'>Fungi</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.3 The membrane around the vacuole is known as
+</label>
+                <!-- //a-->
+                <p> <label><input type="radio" name='cells3'>Tonoplast</label></p>
+                <p><label><input type="radio" name='cells3'>Elaioplast</label></p>
+                <p> <label><input type="radio" name='cells3'>Cytoplast</label></p>
+                <p><label><input type="radio" name='cells3'>Amyloplast</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.4 Microfilaments are composed of a protein called
+             </label>
+                <!-- //b -->
+                <p> <label><input type="radio" name='cells4'>Tubulin</label></p>
+                <p><label><input type="radio" name='cells4'>Actin</label></p>
+                <p> <label><input type="radio" name='cells4'>Myosin</label></p>
+                <p><label><input type="radio" name='cells4'>Chitin</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.5 A plant cell wall is mainly composed of
+</label>
+                <!-- //b -->
+                <p> <label><input type="radio" name='cells5'>Protein</label></p>
+                <p><label><input type="radio" name='cells5'>Cellulose</label></p>
+                <p> <label><input type="radio" name='cells5'>Lipid</label></p>
+                <p><label><input type="radio" name='cells5'>Starch</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.6 Glycolipids in the plasma membrane are located at
+</label>
+                <!-- //b -->
+                <p> <label><input type="radio" name='cells6'>Inner leaflet of the plasma membrane</label></p>
+                <p><label><input type="radio" name='cells6'>The outer leaflet of the plasma membrane</label></p>
+                <p> <label><input type="radio" name='cells6'>Evenly distributed in the inner and outer leaflets</label></p>
+                <p><label><input type="radio" name='cells6'>It varies according to cell types</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.7 Lysosomes are known as “suicidal bags” because
+   </label>
+                <!-- //c -->
+                <p> <label><input type="radio" name='cells7'>Parasitic activity</label></p>
+                <p><label><input type="radio" name='cells7'>Presence of food vacuole</label></p>
+                <p> <label><input type="radio" name='cells7'>Hydrolytic activity</label></p>
+                <p><label><input type="radio" name='cells7'>Catalytic activity</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.8 The properties of integral membrane proteins can be studied by
+  </label>
+                <!-- //c-->
+                <p> <label><input type="radio" name='cells8'>Atomic force microscopy</label></p>
+                <p><label><input type="radio" name='cells8'>Cryo-sectioning and electron microscopy</label></p>
+                <p> <label><input type="radio" name='cells8'>Freeze-fracture technique and electron microscopy</label></p>
+                <p><label><input type="radio" name='cells8'>All of the above</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.9 The fluidity of the plasma membrane increases with
+</label>
+                <!-- //a -->
+                <p> <label><input type="radio" name='cells9'>Increase in unsaturated fatty acids in the membrane</label></p>
+                <p><label><input type="radio" name='cells9'>Increase in saturated fatty acids in the membrane</label></p>
+                <p> <label><input type="radio" name='cells9'>Increase in glycolipid content in the membrane</label></p>
+                <p><label><input type="radio" name='cells9'>Increase in phospholipid content in the membrane</label></p>
+            </label>
+
+            <label class=" container"><br><br>
+                <label class="question">Q.10 Which among the following defines GPI anchored proteins?
+</label>
+                <!-- //b -->
+                <p> <label><input type="radio" name='cells10'>Integral proteins of the plasma membrane</label></p>
+                <p><label><input type="radio" name='cells10'>Peripheral proteins of the plasma membrane</label></p>
+                <p> <label><input type="radio" name='cells10'>Proteins that bind to ion-gated channels in the plasma membrane</label></p>
+                <p><label><input type="radio" name='cells10'>Proteins which randomly bind to lipids of the plasma membrane</label></p>
+            </label>
+
+            <button class="sub-btn">Submit</button>
+            <input type="button"value="Grade Me"onClick="getScore(this.form);">
+       
+       <input type="reset" value="Clear"><p>
+       
+       Number of score out of 15 = <input type= text size 20 name= "mark">
+       
+       Score in percentage = <input type=text size=20 name="percentage"><br>
+
+
+        </form>
+        <script>
+       
+            var numQues = 10;
+            
+            var numChoi = 4;
+            
+            var answers = new Array(15);
+            
+           
+            
+            answers[1] = "Robert Hooke";
+            answers[2] = "Virus";
+            answers[3] = "Tonoplast";
+            answers[4] = "Actin";
+            answers[5] = "Cellulose";
+            answers[6] = "Evenly distributed in the inner and outer leaflets";
+            answers[7] = "Hydrolytic activity";
+            answers[8] = "Freeze-fracture technique and electron microscopy";
+            answers[9] = "Increase in unsaturated fatty acids in the membrane";
+            answers[10] = "Proteins which randomly bind to lipids of the plasma membrane";
+
+            
+            
+            function getScore(form) {
+            
+            var score = 0;
+            
+            var currElt;
+            
+            var currSelection;
+            
+            for (i=0; i<numQues; i++) {
+            
+            currElt = i*numChoi;
+            
+            answered=false;
+            
+            for (j=0; j<numChoi; j++) {
+            
+            currSelection = form.elements[currElt + j];
+            
+            if (currSelection.checked) {
+            
+            answered=true;
+            
+            if (currSelection.value == answers[i]) {
+            
+            score++;
+            
+            break;
+            
+            }
+            
+            }
+            
+            }
+            
+            if (answered ===false){alert("Do answer all the questions, Please") ;return false;}
+            
+            }
+            
+            var scoreper = Math.round(score/numQues*100);
+            
+            form.percentage.value = scoreper + "%";
+            
+            form.mark.value=score;
+            
+            }
+            
+            </script>
+             
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
